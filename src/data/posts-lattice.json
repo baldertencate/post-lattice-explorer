@@ -1,0 +1,6200 @@
+{
+  "schemaVersion": 3,
+  "id": "posts-lattice",
+  "title": "Post's lattice with a schematic symbolic n-layer",
+  "description": "A fixed-layout representation of the displayed Post lattice, enriched with definitions and generating bases transcribed from table tbl:posts_bases. Edges point from smaller to larger clones. The eight nodes with symbolic superscript n are schematic family members with n ≥ 4, placed between the unbounded member and degree 3; dashed chain edges indicate omitted intermediate degrees.",
+  "coordinateSystem": {
+    "source": {
+      "type": "tikz",
+      "xUnitCm": 0.95,
+      "yUnitCm": 0.7,
+      "yAxisDirection": "up"
+    },
+    "browser": {
+      "pxPerCm": 64.0,
+      "marginPx": 40.0,
+      "nodeSizePx": 40.0,
+      "yAxisDirection": "down",
+      "widthPx": 894.72,
+      "heightPx": 1132.8,
+      "positionAnchor": "top-left"
+    },
+    "transform": {
+      "centerX": "marginPx + (sourceX - minSourceX) * xUnitCm * pxPerCm",
+      "centerY": "marginPx + (maxSourceY - sourceY) * yUnitCm * pxPerCm",
+      "minSourceX": -6.7,
+      "maxSourceX": 6.7,
+      "minSourceY": 0.5,
+      "maxSourceY": 24.0
+    }
+  },
+  "layoutNotes": {
+    "symbolicNLayer": {
+      "count": 8,
+      "nodeIds": [
+        "Sn0",
+        "Sn02",
+        "Sn01",
+        "Sn00",
+        "Sn10",
+        "Sn11",
+        "Sn12",
+        "Sn1"
+      ],
+      "parameterConstraint": "n ≥ 4",
+      "placement": "Each symbolic node is at the exact source-coordinate midpoint between its unbounded family member and its degree-3 member.",
+      "verticalShiftApplied": false,
+      "reasonNoShiftWasNeeded": "The original 2.5 source-unit gap provides 1.25 source units (56 browser pixels with the current transform) on each side of the inserted node.",
+      "semanticCaveat": "A symbolic n-node is a schematic representative of an arbitrary fixed family member, not one additional literal clone independent of n."
+    },
+    "edgeMeaning": {
+      "solid": "Displayed cover/inclusion edge at one explicit layer.",
+      "dashed": "A displayed gap in an infinite hierarchy; omitted intermediate degree layers may lie between the endpoints."
+    },
+    "detailsPlacement": "Show definitions and bases in a tooltip or side panel rather than inside the circular node."
+  },
+  "sources": {
+    "layout": [
+      "lattice.tex",
+      "postslattice.tex"
+    ],
+    "metadata": {
+      "file": "main (2)(1).tex",
+      "tableLabel": "tbl:posts_bases",
+      "caption": "List of all Boolean clones with their bases."
+    },
+    "metadataPolicy": "The table is authoritative for definitions and bases. Fixed degree-2/degree-3 entries are obtained by instantiating its n-parametric rows."
+  },
+  "cloneFamilies": [
+    {
+      "id": "S0",
+      "labelLatex": "\\mathsf{S}_{0}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S20",
+        "3": "S30",
+        "n": "Sn0",
+        "unbounded": "S0"
+      }
+    },
+    {
+      "id": "S02",
+      "labelLatex": "\\mathsf{S}_{02}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S202",
+        "3": "S302",
+        "n": "Sn02",
+        "unbounded": "S02"
+      }
+    },
+    {
+      "id": "S01",
+      "labelLatex": "\\mathsf{S}_{01}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S201",
+        "3": "S301",
+        "n": "Sn01",
+        "unbounded": "S01"
+      }
+    },
+    {
+      "id": "S00",
+      "labelLatex": "\\mathsf{S}_{00}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S200",
+        "3": "S300",
+        "n": "Sn00",
+        "unbounded": "S00"
+      }
+    },
+    {
+      "id": "S1",
+      "labelLatex": "\\mathsf{S}_{1}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S21",
+        "3": "S31",
+        "n": "Sn1",
+        "unbounded": "S1"
+      }
+    },
+    {
+      "id": "S12",
+      "labelLatex": "\\mathsf{S}_{12}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S212",
+        "3": "S312",
+        "n": "Sn12",
+        "unbounded": "S12"
+      }
+    },
+    {
+      "id": "S11",
+      "labelLatex": "\\mathsf{S}_{11}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S211",
+        "3": "S311",
+        "n": "Sn11",
+        "unbounded": "S11"
+      }
+    },
+    {
+      "id": "S10",
+      "labelLatex": "\\mathsf{S}_{10}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S210",
+        "3": "S310",
+        "n": "Sn10",
+        "unbounded": "S10"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BF",
+      "group": "BF and c-Reproducing Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 24.0
+      },
+      "label": {
+        "plain": "BF",
+        "latex": "\\mathsf{BF}",
+        "sourceLatex": "\\CloneBF",
+        "emphasized": true,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "ultra thick"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 40.0
+      },
+      "position": {
+        "x": 427.36,
+        "y": 20.0
+      },
+      "description": "All Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\text{All Boolean functions}",
+        "latex": "\\text{All Boolean functions}",
+        "plain": "All Boolean functions"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land y, \\neg x}",
+          "latex": "\\{x\\land y, \\neg x\\}",
+          "plain": "{x∧y, ¬x}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\neg x",
+              "latex": "\\neg x",
+              "plain": "¬x"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land y, \\neg x}",
+        "latex": "\\{x\\land y, \\neg x\\}",
+        "plain": "{x∧y, ¬x}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\neg x",
+            "latex": "\\neg x",
+            "plain": "¬x"
+          }
+        ]
+      },
+      "properties": [
+        "boolean"
+      ]
+    },
+    {
+      "id": "R1",
+      "group": "BF and c-Reproducing Functions",
+      "sourcePosition": {
+        "x": -1.0,
+        "y": 23.0
+      },
+      "label": {
+        "plain": "R1",
+        "latex": "\\mathsf{R_1}",
+        "sourceLatex": "\\CloneR_1",
+        "emphasized": true,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "ultra thick"
+        ]
+      },
+      "centerPosition": {
+        "x": 386.56,
+        "y": 84.8
+      },
+      "position": {
+        "x": 366.56,
+        "y": 64.8
+      },
+      "description": "All 1-reproducing Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\true-reproducing}}",
+        "latex": "\\{f\\mid f\\text{ is 1-reproducing}\\}",
+        "plain": "{f | f is 1-reproducing}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, x\\eq y}",
+          "latex": "\\{x\\lor y, x\\leftrightarrow y\\}",
+          "plain": "{x∨y, x↔y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\eq y",
+              "latex": "x\\leftrightarrow y",
+              "plain": "x↔y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, x\\eq y}",
+        "latex": "\\{x\\lor y, x\\leftrightarrow y\\}",
+        "plain": "{x∨y, x↔y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "x\\eq y",
+            "latex": "x\\leftrightarrow y",
+            "plain": "x↔y"
+          }
+        ]
+      },
+      "properties": [
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "R0",
+      "group": "BF and c-Reproducing Functions",
+      "sourcePosition": {
+        "x": 1.0,
+        "y": 23.0
+      },
+      "label": {
+        "plain": "R0",
+        "latex": "\\mathsf{R_0}",
+        "sourceLatex": "\\CloneR_0",
+        "emphasized": true,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "ultra thick"
+        ]
+      },
+      "centerPosition": {
+        "x": 508.16,
+        "y": 84.8
+      },
+      "position": {
+        "x": 488.16,
+        "y": 64.8
+      },
+      "description": "All 0-reproducing Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\false-reproducing}}",
+        "latex": "\\{f\\mid f\\text{ is 0-reproducing}\\}",
+        "plain": "{f | f is 0-reproducing}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land y, x\\xor y}",
+          "latex": "\\{x\\land y, x\\oplus y\\}",
+          "plain": "{x∧y, x⊕y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "x\\xor y",
+              "latex": "x\\oplus y",
+              "plain": "x⊕y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land y, x\\xor y}",
+        "latex": "\\{x\\land y, x\\oplus y\\}",
+        "plain": "{x∧y, x⊕y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "x\\xor y",
+            "latex": "x\\oplus y",
+            "plain": "x⊕y"
+          }
+        ]
+      },
+      "properties": [
+        "0-reproducing"
+      ]
+    },
+    {
+      "id": "R2",
+      "group": "BF and c-Reproducing Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 22.0
+      },
+      "label": {
+        "plain": "R2",
+        "latex": "\\mathsf{R_2}",
+        "sourceLatex": "\\CloneR_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 129.6
+      },
+      "position": {
+        "x": 427.36,
+        "y": 109.6
+      },
+      "description": "All Boolean functions that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneR_0\\cap\\CloneR_1",
+        "latex": "\\mathsf{R}_0\\cap\\mathsf{R}_1",
+        "plain": "R_0 ∩ R_1"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, x\\land(y\\eq z)}",
+          "latex": "\\{x\\lor y, x\\land(y\\leftrightarrow z)\\}",
+          "plain": "{x∨y, x∧(y↔z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land(y\\eq z)",
+              "latex": "x\\land(y\\leftrightarrow z)",
+              "plain": "x∧(y↔z)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, x\\land(y\\eq z)}",
+        "latex": "\\{x\\lor y, x\\land(y\\leftrightarrow z)\\}",
+        "plain": "{x∨y, x∧(y↔z)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "x\\land(y\\eq z)",
+            "latex": "x\\land(y\\leftrightarrow z)",
+            "plain": "x∧(y↔z)"
+          }
+        ]
+      },
+      "properties": [
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "M",
+      "group": "Monotone Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 20.0
+      },
+      "label": {
+        "plain": "M",
+        "latex": "\\mathsf{M}",
+        "sourceLatex": "\\CloneM",
+        "emphasized": true,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "ultra thick"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 219.2
+      },
+      "position": {
+        "x": 427.36,
+        "y": 199.2
+      },
+      "description": "All monotone Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is monotone}}",
+        "latex": "\\{f\\mid f\\text{ is monotone}\\}",
+        "plain": "{f | f is monotone}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, x\\land y, \\false, \\true}",
+          "latex": "\\{x\\lor y, x\\land y, \\bot, \\top\\}",
+          "plain": "{x∨y, x∧y, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, x\\land y, \\false, \\true}",
+        "latex": "\\{x\\lor y, x\\land y, \\bot, \\top\\}",
+        "plain": "{x∨y, x∧y, ⊥, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "monotone"
+      ]
+    },
+    {
+      "id": "M1",
+      "group": "Monotone Functions",
+      "sourcePosition": {
+        "x": -1.0,
+        "y": 19.0
+      },
+      "label": {
+        "plain": "M1",
+        "latex": "\\mathsf{M_1}",
+        "sourceLatex": "\\CloneM_1",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 386.56,
+        "y": 264.0
+      },
+      "position": {
+        "x": 366.56,
+        "y": 244.0
+      },
+      "description": "All monotone 1-reproducing Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\CloneM\\cap\\CloneR_1",
+        "latex": "\\mathsf{M}\\cap\\mathsf{R}_1",
+        "plain": "M ∩ R_1"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, x\\land y, \\true}",
+          "latex": "\\{x\\lor y, x\\land y, \\top\\}",
+          "plain": "{x∨y, x∧y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, x\\land y, \\true}",
+        "latex": "\\{x\\lor y, x\\land y, \\top\\}",
+        "plain": "{x∨y, x∧y, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "monotone",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "M0",
+      "group": "Monotone Functions",
+      "sourcePosition": {
+        "x": 1.0,
+        "y": 19.0
+      },
+      "label": {
+        "plain": "M0",
+        "latex": "\\mathsf{M_0}",
+        "sourceLatex": "\\CloneM_0",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 508.16,
+        "y": 264.0
+      },
+      "position": {
+        "x": 488.16,
+        "y": 244.0
+      },
+      "description": "All monotone 0-reproducing Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\CloneM\\cap\\CloneR_0",
+        "latex": "\\mathsf{M}\\cap\\mathsf{R}_0",
+        "plain": "M ∩ R_0"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, x\\land y, \\false}",
+          "latex": "\\{x\\lor y, x\\land y, \\bot\\}",
+          "plain": "{x∨y, x∧y, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, x\\land y, \\false}",
+        "latex": "\\{x\\lor y, x\\land y, \\bot\\}",
+        "plain": "{x∨y, x∧y, ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "monotone",
+        "0-reproducing"
+      ]
+    },
+    {
+      "id": "M2",
+      "group": "Monotone Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 18.0
+      },
+      "label": {
+        "plain": "M2",
+        "latex": "\\mathsf{M_2}",
+        "sourceLatex": "\\CloneM_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 308.8
+      },
+      "position": {
+        "x": 427.36,
+        "y": 288.8
+      },
+      "description": "All monotone Boolean functions that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM\\cap\\CloneR_2",
+        "latex": "\\mathsf{M}\\cap\\mathsf{R}_2",
+        "plain": "M ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, x\\land y}",
+          "latex": "\\{x\\lor y, x\\land y\\}",
+          "plain": "{x∨y, x∧y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, x\\land y}",
+        "latex": "\\{x\\lor y, x\\land y\\}",
+        "plain": "{x∨y, x∧y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          }
+        ]
+      },
+      "properties": [
+        "monotone",
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "S21",
+      "group": "1-separating 1",
+      "sourcePosition": {
+        "x": 6.7,
+        "y": 17.8
+      },
+      "label": {
+        "plain": "S21",
+        "latex": "\\mathsf{S_{1}^2}",
+        "sourceLatex": "\\CloneS_{1}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 854.72,
+        "y": 317.76
+      },
+      "position": {
+        "x": 834.72,
+        "y": 297.76
+      },
+      "description": "All 1-separating Boolean functions of degree 2.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating of degree } 2}",
+        "latex": "\\{f \\mid f \\text{ is 1-separating of degree 2}\\}",
+        "plain": "{f | f is 1-separating of degree 2}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\nimp y,T^{3}_2}",
+          "latex": "\\{x\\nrightarrow y,T^{3}_{2}\\}",
+          "plain": "{x↛y, T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\nimp y,T^{3}_2}",
+        "latex": "\\{x\\nrightarrow y,T^{3}_{2}\\}",
+        "plain": "{x↛y, T_2^3}",
+        "elements": [
+          {
+            "sourceLatex": "x\\nimp y",
+            "latex": "x\\nrightarrow y",
+            "plain": "x↛y"
+          },
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-2"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "1"
+      }
+    },
+    {
+      "id": "S31",
+      "group": "1-separating 1",
+      "sourcePosition": {
+        "x": 6.7,
+        "y": 16.3
+      },
+      "label": {
+        "plain": "S31",
+        "latex": "\\mathsf{S_{1}^3}",
+        "sourceLatex": "\\CloneS_{1}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 854.72,
+        "y": 384.96
+      },
+      "position": {
+        "x": 834.72,
+        "y": 364.96
+      },
+      "description": "All 1-separating Boolean functions of degree 3.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating of degree } 3}",
+        "latex": "\\{f \\mid f \\text{ is 1-separating of degree 3}\\}",
+        "plain": "{f | f is 1-separating of degree 3}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\nimp y,T^{4}_3}",
+          "latex": "\\{x\\nrightarrow y,T^{4}_{3}\\}",
+          "plain": "{x↛y, T_3^4}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            },
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\nimp y,T^{4}_3}",
+        "latex": "\\{x\\nrightarrow y,T^{4}_{3}\\}",
+        "plain": "{x↛y, T_3^4}",
+        "elements": [
+          {
+            "sourceLatex": "x\\nimp y",
+            "latex": "x\\nrightarrow y",
+            "plain": "x↛y"
+          },
+          {
+            "sourceLatex": "T^{4}_3",
+            "latex": "T^{4}_{3}",
+            "plain": "T_3^4"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-3"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "1"
+      }
+    },
+    {
+      "id": "S1",
+      "group": "1-separating 1",
+      "sourcePosition": {
+        "x": 6.7,
+        "y": 13.8
+      },
+      "label": {
+        "plain": "S1",
+        "latex": "\\mathsf{S_{1}}",
+        "sourceLatex": "\\CloneS_{1}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 854.72,
+        "y": 496.96
+      },
+      "position": {
+        "x": 834.72,
+        "y": 476.96
+      },
+      "description": "All 1-separating Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating}}",
+        "latex": "\\{f \\mid f \\text{ is 1-separating}\\}",
+        "plain": "{f | f is 1-separating}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\nimp y}",
+          "latex": "\\{x\\nrightarrow y\\}",
+          "plain": "{x↛y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\nimp y}",
+        "latex": "\\{x\\nrightarrow y\\}",
+        "plain": "{x↛y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\nimp y",
+            "latex": "x\\nrightarrow y",
+            "plain": "x↛y"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "1"
+      }
+    },
+    {
+      "id": "S212",
+      "group": "1-separating 2",
+      "sourcePosition": {
+        "x": 5.8,
+        "y": 16.5
+      },
+      "label": {
+        "plain": "S212",
+        "latex": "\\mathsf{S_{12}^2}",
+        "sourceLatex": "\\CloneS_{12}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 800.0,
+        "y": 376.0
+      },
+      "position": {
+        "x": 780.0,
+        "y": 356.0
+      },
+      "description": "All 1-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^2\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{1}^{2}\\cap\\mathsf{R}_2",
+        "plain": "S_1^2 ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\aimp(x,y,z),T^{3}_2}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z),T^{3}_{2}\\}",
+          "plain": "{aimp(x,y,z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\aimp(x,y,z),T^{3}_2}",
+        "latex": "\\{\\operatorname{aimp}(x,y,z),T^{3}_{2}\\}",
+        "plain": "{aimp(x,y,z), T_2^3}",
+        "elements": [
+          {
+            "sourceLatex": "\\aimp(x,y,z)",
+            "latex": "\\operatorname{aimp}(x,y,z)",
+            "plain": "aimp(x,y,z)"
+          },
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-2",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "12"
+      }
+    },
+    {
+      "id": "S312",
+      "group": "1-separating 2",
+      "sourcePosition": {
+        "x": 5.8,
+        "y": 15.0
+      },
+      "label": {
+        "plain": "S312",
+        "latex": "\\mathsf{S_{12}^3}",
+        "sourceLatex": "\\CloneS_{12}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 800.0,
+        "y": 443.2
+      },
+      "position": {
+        "x": 780.0,
+        "y": 423.2
+      },
+      "description": "All 1-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^3\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{1}^{3}\\cap\\mathsf{R}_2",
+        "plain": "S_1^3 ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\aimp(x,y,z),T^{4}_3}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z),T^{4}_{3}\\}",
+          "plain": "{aimp(x,y,z), T_3^4}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            },
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\aimp(x,y,z),T^{4}_3}",
+        "latex": "\\{\\operatorname{aimp}(x,y,z),T^{4}_{3}\\}",
+        "plain": "{aimp(x,y,z), T_3^4}",
+        "elements": [
+          {
+            "sourceLatex": "\\aimp(x,y,z)",
+            "latex": "\\operatorname{aimp}(x,y,z)",
+            "plain": "aimp(x,y,z)"
+          },
+          {
+            "sourceLatex": "T^{4}_3",
+            "latex": "T^{4}_{3}",
+            "plain": "T_3^4"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-3",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "12"
+      }
+    },
+    {
+      "id": "S12",
+      "group": "1-separating 2",
+      "sourcePosition": {
+        "x": 5.8,
+        "y": 12.5
+      },
+      "label": {
+        "plain": "S12",
+        "latex": "\\mathsf{S_{12}}",
+        "sourceLatex": "\\CloneS_{12}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 800.0,
+        "y": 555.2
+      },
+      "position": {
+        "x": 780.0,
+        "y": 535.2
+      },
+      "description": "All 1-separating Boolean functions that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{1}\\cap\\mathsf{R}_2",
+        "plain": "S_1 ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\aimp(x,y,z)}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z)\\}",
+          "plain": "{aimp(x,y,z)}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\aimp(x,y,z)}",
+        "latex": "\\{\\operatorname{aimp}(x,y,z)\\}",
+        "plain": "{aimp(x,y,z)}",
+        "elements": [
+          {
+            "sourceLatex": "\\aimp(x,y,z)",
+            "latex": "\\operatorname{aimp}(x,y,z)",
+            "plain": "aimp(x,y,z)"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "12"
+      }
+    },
+    {
+      "id": "S211",
+      "group": "1-separating 3",
+      "sourcePosition": {
+        "x": 4.8,
+        "y": 16.5
+      },
+      "label": {
+        "plain": "S211",
+        "latex": "\\mathsf{S_{11}^2}",
+        "sourceLatex": "\\CloneS_{11}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 739.2,
+        "y": 376.0
+      },
+      "position": {
+        "x": 719.2,
+        "y": 356.0
+      },
+      "description": "All 1-separating Boolean functions of degree 2 that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}^{2}\\cap\\mathsf{M}",
+        "plain": "S_1^2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{3}_2,\\false}",
+          "latex": "\\{T^{3}_{2},\\bot\\}",
+          "plain": "{T_2^3, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{3}_2,\\false}",
+        "latex": "\\{T^{3}_{2},\\bot\\}",
+        "plain": "{T_2^3, ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-2",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "11"
+      }
+    },
+    {
+      "id": "S311",
+      "group": "1-separating 3",
+      "sourcePosition": {
+        "x": 4.8,
+        "y": 15.0
+      },
+      "label": {
+        "plain": "S311",
+        "latex": "\\mathsf{S_{11}^3}",
+        "sourceLatex": "\\CloneS_{11}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 739.2,
+        "y": 443.2
+      },
+      "position": {
+        "x": 719.2,
+        "y": 423.2
+      },
+      "description": "All 1-separating Boolean functions of degree 3 that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^3\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}^{3}\\cap\\mathsf{M}",
+        "plain": "S_1^3 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{4}_3,\\false}",
+          "latex": "\\{T^{4}_{3},\\bot\\}",
+          "plain": "{T_3^4, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{4}_3,\\false}",
+        "latex": "\\{T^{4}_{3},\\bot\\}",
+        "plain": "{T_3^4, ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "T^{4}_3",
+            "latex": "T^{4}_{3}",
+            "plain": "T_3^4"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-3",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "11"
+      }
+    },
+    {
+      "id": "S11",
+      "group": "1-separating 3",
+      "sourcePosition": {
+        "x": 4.8,
+        "y": 12.5
+      },
+      "label": {
+        "plain": "S11",
+        "latex": "\\mathsf{S_{11}}",
+        "sourceLatex": "\\CloneS_{11}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 739.2,
+        "y": 555.2
+      },
+      "position": {
+        "x": 719.2,
+        "y": 535.2
+      },
+      "description": "All 1-separating Boolean functions that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}\\cap\\mathsf{M}",
+        "plain": "S_1 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land(y\\lor z),\\false}",
+          "latex": "\\{x\\land(y\\lor z),\\bot\\}",
+          "plain": "{x∧(y∨z), ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land(y\\lor z)",
+              "latex": "x\\land(y\\lor z)",
+              "plain": "x∧(y∨z)"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land(y\\lor z),\\false}",
+        "latex": "\\{x\\land(y\\lor z),\\bot\\}",
+        "plain": "{x∧(y∨z), ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land(y\\lor z)",
+            "latex": "x\\land(y\\lor z)",
+            "plain": "x∧(y∨z)"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "11"
+      }
+    },
+    {
+      "id": "S210",
+      "group": "1-separating 4",
+      "sourcePosition": {
+        "x": 3.9,
+        "y": 15.2
+      },
+      "label": {
+        "plain": "S210",
+        "latex": "\\mathsf{S_{10}^2}",
+        "sourceLatex": "\\CloneS_{10}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 684.48,
+        "y": 434.24
+      },
+      "position": {
+        "x": 664.48,
+        "y": 414.24
+      },
+      "description": "All 1-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^2\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}^{2}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_1^2 ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land(y\\lor z),T^{3}_2}",
+          "latex": "\\{x\\land(y\\lor z),T^{3}_{2}\\}",
+          "plain": "{x∧(y∨z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land(y\\lor z)",
+              "latex": "x\\land(y\\lor z)",
+              "plain": "x∧(y∨z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land(y\\lor z),T^{3}_2}",
+        "latex": "\\{x\\land(y\\lor z),T^{3}_{2}\\}",
+        "plain": "{x∧(y∨z), T_2^3}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land(y\\lor z)",
+            "latex": "x\\land(y\\lor z)",
+            "plain": "x∧(y∨z)"
+          },
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-2",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "10"
+      }
+    },
+    {
+      "id": "S310",
+      "group": "1-separating 4",
+      "sourcePosition": {
+        "x": 3.9,
+        "y": 13.7
+      },
+      "label": {
+        "plain": "S310",
+        "latex": "\\mathsf{S_{10}^3}",
+        "sourceLatex": "\\CloneS_{10}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 684.48,
+        "y": 501.44
+      },
+      "position": {
+        "x": 664.48,
+        "y": 481.44
+      },
+      "description": "All 1-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^3\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}^{3}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_1^3 ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{4}_3}",
+          "latex": "\\{T^{4}_{3}\\}",
+          "plain": "{T_3^4}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{4}_3}",
+        "latex": "\\{T^{4}_{3}\\}",
+        "plain": "{T_3^4}",
+        "elements": [
+          {
+            "sourceLatex": "T^{4}_3",
+            "latex": "T^{4}_{3}",
+            "plain": "T_3^4"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-3",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "10"
+      }
+    },
+    {
+      "id": "S10",
+      "group": "1-separating 4",
+      "sourcePosition": {
+        "x": 3.9,
+        "y": 11.2
+      },
+      "label": {
+        "plain": "S10",
+        "latex": "\\mathsf{S_{10}}",
+        "sourceLatex": "\\CloneS_{10}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 684.48,
+        "y": 613.44
+      },
+      "position": {
+        "x": 664.48,
+        "y": 593.44
+      },
+      "description": "All 1-separating Boolean functions that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_1 ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land(y\\lor z)}",
+          "latex": "\\{x\\land(y\\lor z)\\}",
+          "plain": "{x∧(y∨z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land(y\\lor z)",
+              "latex": "x\\land(y\\lor z)",
+              "plain": "x∧(y∨z)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land(y\\lor z)}",
+        "latex": "\\{x\\land(y\\lor z)\\}",
+        "plain": "{x∧(y∨z)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land(y\\lor z)",
+            "latex": "x\\land(y\\lor z)",
+            "plain": "x∧(y∨z)"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "10"
+      }
+    },
+    {
+      "id": "S20",
+      "group": "0-separating 1",
+      "sourcePosition": {
+        "x": -6.7,
+        "y": 17.8
+      },
+      "label": {
+        "plain": "S20",
+        "latex": "\\mathsf{S_{0}^2}",
+        "sourceLatex": "\\CloneS_{0}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 40.0,
+        "y": 317.76
+      },
+      "position": {
+        "x": 20.0,
+        "y": 297.76
+      },
+      "description": "All 0-separating Boolean functions of degree 2.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating of degree } 2}",
+        "latex": "\\{f \\mid f \\text{ is 0-separating of degree 2}\\}",
+        "plain": "{f | f is 0-separating of degree 2}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\limp y,T^{3}_2}",
+          "latex": "\\{x\\to y,T^{3}_{2}\\}",
+          "plain": "{x→y, T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\limp y,T^{3}_2}",
+        "latex": "\\{x\\to y,T^{3}_{2}\\}",
+        "plain": "{x→y, T_2^3}",
+        "elements": [
+          {
+            "sourceLatex": "x\\limp y",
+            "latex": "x\\to y",
+            "plain": "x→y"
+          },
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-2"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "0"
+      }
+    },
+    {
+      "id": "S30",
+      "group": "0-separating 1",
+      "sourcePosition": {
+        "x": -6.7,
+        "y": 16.3
+      },
+      "label": {
+        "plain": "S30",
+        "latex": "\\mathsf{S_{0}^3}",
+        "sourceLatex": "\\CloneS_{0}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 40.0,
+        "y": 384.96
+      },
+      "position": {
+        "x": 20.0,
+        "y": 364.96
+      },
+      "description": "All 0-separating Boolean functions of degree 3.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating of degree } 3}",
+        "latex": "\\{f \\mid f \\text{ is 0-separating of degree 3}\\}",
+        "plain": "{f | f is 0-separating of degree 3}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\limp y,T^{4}_2}",
+          "latex": "\\{x\\to y,T^{4}_{2}\\}",
+          "plain": "{x→y, T_2^4}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            },
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\limp y,T^{4}_2}",
+        "latex": "\\{x\\to y,T^{4}_{2}\\}",
+        "plain": "{x→y, T_2^4}",
+        "elements": [
+          {
+            "sourceLatex": "x\\limp y",
+            "latex": "x\\to y",
+            "plain": "x→y"
+          },
+          {
+            "sourceLatex": "T^{4}_2",
+            "latex": "T^{4}_{2}",
+            "plain": "T_2^4"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-3"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "0"
+      }
+    },
+    {
+      "id": "S0",
+      "group": "0-separating 1",
+      "sourcePosition": {
+        "x": -6.7,
+        "y": 13.8
+      },
+      "label": {
+        "plain": "S0",
+        "latex": "\\mathsf{S_{0}}",
+        "sourceLatex": "\\CloneS_{0}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 40.0,
+        "y": 496.96
+      },
+      "position": {
+        "x": 20.0,
+        "y": 476.96
+      },
+      "description": "All 0-separating Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating}}",
+        "latex": "\\{f \\mid f \\text{ is 0-separating}\\}",
+        "plain": "{f | f is 0-separating}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\limp y}",
+          "latex": "\\{x\\to y\\}",
+          "plain": "{x→y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\limp y}",
+        "latex": "\\{x\\to y\\}",
+        "plain": "{x→y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\limp y",
+            "latex": "x\\to y",
+            "plain": "x→y"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "0"
+      }
+    },
+    {
+      "id": "S202",
+      "group": "0-separating 2",
+      "sourcePosition": {
+        "x": -5.8,
+        "y": 16.5
+      },
+      "label": {
+        "plain": "S202",
+        "latex": "\\mathsf{S_{02}^2}",
+        "sourceLatex": "\\CloneS_{02}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 94.72,
+        "y": 376.0
+      },
+      "position": {
+        "x": 74.72,
+        "y": 356.0
+      },
+      "description": "All 0-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^2\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{0}^{2}\\cap\\mathsf{R}_2",
+        "plain": "S_0^2 ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{3}_2}",
+          "latex": "\\{x\\lor(y\\nrightarrow z),T^{3}_{2}\\}",
+          "plain": "{x∨(y↛z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{3}_2}",
+        "latex": "\\{x\\lor(y\\nrightarrow z),T^{3}_{2}\\}",
+        "plain": "{x∨(y↛z), T_2^3}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\nimp z)",
+            "latex": "x\\lor(y\\nrightarrow z)",
+            "plain": "x∨(y↛z)"
+          },
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-2",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "02"
+      }
+    },
+    {
+      "id": "S302",
+      "group": "0-separating 2",
+      "sourcePosition": {
+        "x": -5.8,
+        "y": 15.0
+      },
+      "label": {
+        "plain": "S302",
+        "latex": "\\mathsf{S_{02}^3}",
+        "sourceLatex": "\\CloneS_{02}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 94.72,
+        "y": 443.2
+      },
+      "position": {
+        "x": 74.72,
+        "y": 423.2
+      },
+      "description": "All 0-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^3\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{0}^{3}\\cap\\mathsf{R}_2",
+        "plain": "S_0^3 ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{4}_2}",
+          "latex": "\\{x\\lor(y\\nrightarrow z),T^{4}_{2}\\}",
+          "plain": "{x∨(y↛z), T_2^4}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            },
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{4}_2}",
+        "latex": "\\{x\\lor(y\\nrightarrow z),T^{4}_{2}\\}",
+        "plain": "{x∨(y↛z), T_2^4}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\nimp z)",
+            "latex": "x\\lor(y\\nrightarrow z)",
+            "plain": "x∨(y↛z)"
+          },
+          {
+            "sourceLatex": "T^{4}_2",
+            "latex": "T^{4}_{2}",
+            "plain": "T_2^4"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-3",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "02"
+      }
+    },
+    {
+      "id": "S02",
+      "group": "0-separating 2",
+      "sourcePosition": {
+        "x": -5.8,
+        "y": 12.5
+      },
+      "label": {
+        "plain": "S02",
+        "latex": "\\mathsf{S_{02}}",
+        "sourceLatex": "\\CloneS_{02}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 94.72,
+        "y": 555.2
+      },
+      "position": {
+        "x": 74.72,
+        "y": 535.2
+      },
+      "description": "All 0-separating Boolean functions that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{0}\\cap\\mathsf{R}_2",
+        "plain": "S_0 ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z)}",
+          "latex": "\\{x\\lor(y\\nrightarrow z)\\}",
+          "plain": "{x∨(y↛z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\nimp z)}",
+        "latex": "\\{x\\lor(y\\nrightarrow z)\\}",
+        "plain": "{x∨(y↛z)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\nimp z)",
+            "latex": "x\\lor(y\\nrightarrow z)",
+            "plain": "x∨(y↛z)"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "02"
+      }
+    },
+    {
+      "id": "S201",
+      "group": "0-separating 3",
+      "sourcePosition": {
+        "x": -4.8,
+        "y": 16.5
+      },
+      "label": {
+        "plain": "S201",
+        "latex": "\\mathsf{S_{01}^2}",
+        "sourceLatex": "\\CloneS_{01}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 155.52,
+        "y": 376.0
+      },
+      "position": {
+        "x": 135.52,
+        "y": 356.0
+      },
+      "description": "All 0-separating Boolean functions of degree 2 that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}^{2}\\cap\\mathsf{M}",
+        "plain": "S_0^2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{3}_2,\\true}",
+          "latex": "\\{T^{3}_{2},\\top\\}",
+          "plain": "{T_2^3, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{3}_2,\\true}",
+        "latex": "\\{T^{3}_{2},\\top\\}",
+        "plain": "{T_2^3, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-2",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "01"
+      }
+    },
+    {
+      "id": "S301",
+      "group": "0-separating 3",
+      "sourcePosition": {
+        "x": -4.8,
+        "y": 15.0
+      },
+      "label": {
+        "plain": "S301",
+        "latex": "\\mathsf{S_{01}^3}",
+        "sourceLatex": "\\CloneS_{01}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 155.52,
+        "y": 443.2
+      },
+      "position": {
+        "x": 135.52,
+        "y": 423.2
+      },
+      "description": "All 0-separating Boolean functions of degree 3 that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^3\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}^{3}\\cap\\mathsf{M}",
+        "plain": "S_0^3 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{4}_2,\\true}",
+          "latex": "\\{T^{4}_{2},\\top\\}",
+          "plain": "{T_2^4, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{4}_2,\\true}",
+        "latex": "\\{T^{4}_{2},\\top\\}",
+        "plain": "{T_2^4, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "T^{4}_2",
+            "latex": "T^{4}_{2}",
+            "plain": "T_2^4"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-3",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "01"
+      }
+    },
+    {
+      "id": "S01",
+      "group": "0-separating 3",
+      "sourcePosition": {
+        "x": -4.8,
+        "y": 12.5
+      },
+      "label": {
+        "plain": "S01",
+        "latex": "\\mathsf{S_{01}}",
+        "sourceLatex": "\\CloneS_{01}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 155.52,
+        "y": 555.2
+      },
+      "position": {
+        "x": 135.52,
+        "y": 535.2
+      },
+      "description": "All 0-separating Boolean functions that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}\\cap\\mathsf{M}",
+        "plain": "S_0 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\land z),\\true}",
+          "latex": "\\{x\\lor(y\\land z),\\top\\}",
+          "plain": "{x∨(y∧z), ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\land z)",
+              "latex": "x\\lor(y\\land z)",
+              "plain": "x∨(y∧z)"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\land z),\\true}",
+        "latex": "\\{x\\lor(y\\land z),\\top\\}",
+        "plain": "{x∨(y∧z), ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\land z)",
+            "latex": "x\\lor(y\\land z)",
+            "plain": "x∨(y∧z)"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "01"
+      }
+    },
+    {
+      "id": "S200",
+      "group": "0-separating 4",
+      "sourcePosition": {
+        "x": -3.9,
+        "y": 15.2
+      },
+      "label": {
+        "plain": "S200",
+        "latex": "\\mathsf{S_{00}^2}",
+        "sourceLatex": "\\CloneS_{00}^2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 210.24,
+        "y": 434.24
+      },
+      "position": {
+        "x": 190.24,
+        "y": 414.24
+      },
+      "description": "All 0-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^2\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}^{2}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_0^2 ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\land z),T^{3}_2}",
+          "latex": "\\{x\\lor(y\\land z),T^{3}_{2}\\}",
+          "plain": "{x∨(y∧z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\land z)",
+              "latex": "x\\lor(y\\land z)",
+              "plain": "x∨(y∧z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\land z),T^{3}_2}",
+        "latex": "\\{x\\lor(y\\land z),T^{3}_{2}\\}",
+        "plain": "{x∨(y∧z), T_2^3}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\land z)",
+            "latex": "x\\lor(y\\land z)",
+            "plain": "x∨(y∧z)"
+          },
+          {
+            "sourceLatex": "T^{3}_2",
+            "latex": "T^{3}_{2}",
+            "plain": "T_2^3"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-2",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 2,
+        "degreeKind": "finite",
+        "familySubscript": "00"
+      }
+    },
+    {
+      "id": "S300",
+      "group": "0-separating 4",
+      "sourcePosition": {
+        "x": -3.9,
+        "y": 13.7
+      },
+      "label": {
+        "plain": "S300",
+        "latex": "\\mathsf{S_{00}^3}",
+        "sourceLatex": "\\CloneS_{00}^3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 210.24,
+        "y": 501.44
+      },
+      "position": {
+        "x": 190.24,
+        "y": 481.44
+      },
+      "description": "All 0-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^3\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}^{3}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_0^3 ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{4}_2}",
+          "latex": "\\{T^{4}_{2}\\}",
+          "plain": "{T_2^4}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{4}_2}",
+        "latex": "\\{T^{4}_{2}\\}",
+        "plain": "{T_2^4}",
+        "elements": [
+          {
+            "sourceLatex": "T^{4}_2",
+            "latex": "T^{4}_{2}",
+            "plain": "T_2^4"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-3",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": 3,
+        "degreeKind": "finite",
+        "familySubscript": "00"
+      }
+    },
+    {
+      "id": "S00",
+      "group": "0-separating 4",
+      "sourcePosition": {
+        "x": -3.9,
+        "y": 11.2
+      },
+      "label": {
+        "plain": "S00",
+        "latex": "\\mathsf{S_{00}}",
+        "sourceLatex": "\\CloneS_{00}",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 210.24,
+        "y": 613.44
+      },
+      "position": {
+        "x": 190.24,
+        "y": 593.44
+      },
+      "description": "All 0-separating Boolean functions that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_0 ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\land z)}",
+          "latex": "\\{x\\lor(y\\land z)\\}",
+          "plain": "{x∨(y∧z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\land z)",
+              "latex": "x\\lor(y\\land z)",
+              "plain": "x∨(y∧z)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\land z)}",
+        "latex": "\\{x\\lor(y\\land z)\\}",
+        "plain": "{x∨(y∧z)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\land z)",
+            "latex": "x\\lor(y\\land z)",
+            "plain": "x∨(y∧z)"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": null,
+        "degreeKind": "unbounded",
+        "familySubscript": "00"
+      }
+    },
+    {
+      "id": "D",
+      "group": "Selfdual Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 14.0
+      },
+      "label": {
+        "plain": "D",
+        "latex": "\\mathsf{D}",
+        "sourceLatex": "\\CloneD",
+        "emphasized": true,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "ultra thick"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 488.0
+      },
+      "position": {
+        "x": 427.36,
+        "y": 468.0
+      },
+      "description": "All self-dual Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is self-dual}}",
+        "latex": "\\{f\\mid f\\text{ is self-dual}\\}",
+        "plain": "{f | f is self-dual}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\maj(x, \\overline y, \\overline z)}",
+          "latex": "\\{\\operatorname{maj}(x,\\overline y,\\overline z)\\}",
+          "plain": "{maj(x,ȳ,z̄)}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj(x, \\overline y, \\overline z)",
+              "latex": "\\operatorname{maj}(x,\\overline y,\\overline z)",
+              "plain": "maj(x,ȳ,z̄)"
+            }
+          ]
+        },
+        {
+          "sourceLatex": "\\set{\\maj,\\lnot}",
+          "latex": "\\{\\operatorname{maj},\\neg\\}",
+          "plain": "{maj, ¬}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj",
+              "latex": "\\operatorname{maj}",
+              "plain": "maj"
+            },
+            {
+              "sourceLatex": "\\lnot",
+              "latex": "\\neg",
+              "plain": "¬"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\maj(x, \\overline y, \\overline z)}",
+        "latex": "\\{\\operatorname{maj}(x,\\overline y,\\overline z)\\}",
+        "plain": "{maj(x,ȳ,z̄)}",
+        "elements": [
+          {
+            "sourceLatex": "\\maj(x, \\overline y, \\overline z)",
+            "latex": "\\operatorname{maj}(x,\\overline y,\\overline z)",
+            "plain": "maj(x,ȳ,z̄)"
+          }
+        ]
+      },
+      "properties": [
+        "self-dual"
+      ]
+    },
+    {
+      "id": "D1",
+      "group": "Selfdual Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 13.0
+      },
+      "label": {
+        "plain": "D1",
+        "latex": "\\mathsf{D_1}",
+        "sourceLatex": "\\CloneD_1",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 532.8
+      },
+      "position": {
+        "x": 427.36,
+        "y": 512.8
+      },
+      "description": "All self-dual Boolean functions that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneD\\cap\\CloneR_2",
+        "latex": "\\mathsf{D}\\cap\\mathsf{R}_2",
+        "plain": "D ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\maj(x, y, \\overline z)}",
+          "latex": "\\{\\operatorname{maj}(x,y,\\overline z)\\}",
+          "plain": "{maj(x,y,z̄)}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj(x, y, \\overline z)",
+              "latex": "\\operatorname{maj}(x,y,\\overline z)",
+              "plain": "maj(x,y,z̄)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\maj(x, y, \\overline z)}",
+        "latex": "\\{\\operatorname{maj}(x,y,\\overline z)\\}",
+        "plain": "{maj(x,y,z̄)}",
+        "elements": [
+          {
+            "sourceLatex": "\\maj(x, y, \\overline z)",
+            "latex": "\\operatorname{maj}(x,y,\\overline z)",
+            "plain": "maj(x,y,z̄)"
+          }
+        ]
+      },
+      "properties": [
+        "self-dual",
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "D2",
+      "group": "Selfdual Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 12.0
+      },
+      "label": {
+        "plain": "D2",
+        "latex": "\\mathsf{D_2}",
+        "sourceLatex": "\\CloneD_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 577.6
+      },
+      "position": {
+        "x": 427.36,
+        "y": 557.6
+      },
+      "description": "All monotone self-dual Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\CloneD\\cap\\CloneM",
+        "latex": "\\mathsf{D}\\cap\\mathsf{M}",
+        "plain": "D ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\maj(x, y, z)}",
+          "latex": "\\{\\operatorname{maj}(x,y,z)\\}",
+          "plain": "{maj(x,y,z)}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj(x, y, z)",
+              "latex": "\\operatorname{maj}(x,y,z)",
+              "plain": "maj(x,y,z)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\maj(x, y, z)}",
+        "latex": "\\{\\operatorname{maj}(x,y,z)\\}",
+        "plain": "{maj(x,y,z)}",
+        "elements": [
+          {
+            "sourceLatex": "\\maj(x, y, z)",
+            "latex": "\\operatorname{maj}(x,y,z)",
+            "plain": "maj(x,y,z)"
+          }
+        ]
+      },
+      "properties": [
+        "self-dual",
+        "monotone"
+      ]
+    },
+    {
+      "id": "E",
+      "group": "Conjunctions",
+      "sourcePosition": {
+        "x": 3.0,
+        "y": 10.0
+      },
+      "label": {
+        "plain": "E",
+        "latex": "\\mathsf{E}",
+        "sourceLatex": "\\CloneE",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 629.76,
+        "y": 667.2
+      },
+      "position": {
+        "x": 609.76,
+        "y": 647.2
+      },
+      "description": "All Boolean functions that are a conjunction or a constant.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is a conjunction or constant}}",
+        "latex": "\\{f\\mid f\\text{ is a conjunction or constant}\\}",
+        "plain": "{f | f is a conjunction or constant}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land y, \\false, \\true}",
+          "latex": "\\{x\\land y,\\bot,\\top\\}",
+          "plain": "{x∧y, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land y, \\false, \\true}",
+        "latex": "\\{x\\land y,\\bot,\\top\\}",
+        "plain": "{x∧y, ⊥, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "conjunctive"
+      ]
+    },
+    {
+      "id": "E1",
+      "group": "Conjunctions",
+      "sourcePosition": {
+        "x": 2.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "E1",
+        "latex": "\\mathsf{E_1}",
+        "sourceLatex": "\\CloneE_1",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 568.96,
+        "y": 712.0
+      },
+      "position": {
+        "x": 548.96,
+        "y": 692.0
+      },
+      "description": "The conjunctive clone that is monotone and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM_1\\cap\\CloneE",
+        "latex": "\\mathsf{M}_1\\cap\\mathsf{E}",
+        "plain": "M_1 ∩ E"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land y, \\true}",
+          "latex": "\\{x\\land y,\\top\\}",
+          "plain": "{x∧y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land y, \\true}",
+        "latex": "\\{x\\land y,\\top\\}",
+        "plain": "{x∧y, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "conjunctive",
+        "monotone",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "E0",
+      "group": "Conjunctions",
+      "sourcePosition": {
+        "x": 4.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "E0",
+        "latex": "\\mathsf{E_0}",
+        "sourceLatex": "\\CloneE_0",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 690.56,
+        "y": 712.0
+      },
+      "position": {
+        "x": 670.56,
+        "y": 692.0
+      },
+      "description": "The conjunctive clone that is monotone and 0-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM_0\\cap\\CloneE",
+        "latex": "\\mathsf{M}_0\\cap\\mathsf{E}",
+        "plain": "M_0 ∩ E"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land y, \\false}",
+          "latex": "\\{x\\land y,\\bot\\}",
+          "plain": "{x∧y, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land y, \\false}",
+        "latex": "\\{x\\land y,\\bot\\}",
+        "plain": "{x∧y, ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "conjunctive",
+        "monotone",
+        "0-reproducing"
+      ]
+    },
+    {
+      "id": "E2",
+      "group": "Conjunctions",
+      "sourcePosition": {
+        "x": 3.0,
+        "y": 8.0
+      },
+      "label": {
+        "plain": "E2",
+        "latex": "\\mathsf{E_2}",
+        "sourceLatex": "\\CloneE_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 629.76,
+        "y": 756.8
+      },
+      "position": {
+        "x": 609.76,
+        "y": 736.8
+      },
+      "description": "The conjunctive clone that is monotone, 0-reproducing, and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM_2\\cap\\CloneE",
+        "latex": "\\mathsf{M}_2\\cap\\mathsf{E}",
+        "plain": "M_2 ∩ E"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\land y}",
+          "latex": "\\{x\\land y\\}",
+          "plain": "{x∧y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\land y}",
+        "latex": "\\{x\\land y\\}",
+        "plain": "{x∧y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\land y",
+            "latex": "x\\land y",
+            "plain": "x∧y"
+          }
+        ]
+      },
+      "properties": [
+        "conjunctive",
+        "monotone",
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "V",
+      "group": "Disjunctions",
+      "sourcePosition": {
+        "x": -3.0,
+        "y": 10.0
+      },
+      "label": {
+        "plain": "V",
+        "latex": "\\mathsf{V}",
+        "sourceLatex": "\\CloneV",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 264.96,
+        "y": 667.2
+      },
+      "position": {
+        "x": 244.96,
+        "y": 647.2
+      },
+      "description": "All Boolean functions that are a disjunction or a constant.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is a disjunction or constant}}",
+        "latex": "\\{f\\mid f\\text{ is a disjunction or constant}\\}",
+        "plain": "{f | f is a disjunction or constant}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, \\false,\\true}",
+          "latex": "\\{x\\lor y,\\bot,\\top\\}",
+          "plain": "{x∨y, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, \\false,\\true}",
+        "latex": "\\{x\\lor y,\\bot,\\top\\}",
+        "plain": "{x∨y, ⊥, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "disjunctive"
+      ]
+    },
+    {
+      "id": "V0",
+      "group": "Disjunctions",
+      "sourcePosition": {
+        "x": -2.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "V0",
+        "latex": "\\mathsf{V_0}",
+        "sourceLatex": "\\CloneV_0",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 325.76,
+        "y": 712.0
+      },
+      "position": {
+        "x": 305.76,
+        "y": 692.0
+      },
+      "description": "The disjunctive clone that is monotone and 0-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM_0\\cap\\CloneV",
+        "latex": "\\mathsf{M}_0\\cap\\mathsf{V}",
+        "plain": "M_0 ∩ V"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, \\false}",
+          "latex": "\\{x\\lor y,\\bot\\}",
+          "plain": "{x∨y, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, \\false}",
+        "latex": "\\{x\\lor y,\\bot\\}",
+        "plain": "{x∨y, ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "disjunctive",
+        "monotone",
+        "0-reproducing"
+      ]
+    },
+    {
+      "id": "V1",
+      "group": "Disjunctions",
+      "sourcePosition": {
+        "x": -4.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "V1",
+        "latex": "\\mathsf{V_1}",
+        "sourceLatex": "\\CloneV_1",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 204.16,
+        "y": 712.0
+      },
+      "position": {
+        "x": 184.16,
+        "y": 692.0
+      },
+      "description": "The disjunctive clone that is monotone and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM_1\\cap\\CloneV",
+        "latex": "\\mathsf{M}_1\\cap\\mathsf{V}",
+        "plain": "M_1 ∩ V"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y, \\true}",
+          "latex": "\\{x\\lor y,\\top\\}",
+          "plain": "{x∨y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y, \\true}",
+        "latex": "\\{x\\lor y,\\top\\}",
+        "plain": "{x∨y, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "disjunctive",
+        "monotone",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "V2",
+      "group": "Disjunctions",
+      "sourcePosition": {
+        "x": -3.0,
+        "y": 8.0
+      },
+      "label": {
+        "plain": "V2",
+        "latex": "\\mathsf{V_2}",
+        "sourceLatex": "\\CloneV_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 264.96,
+        "y": 756.8
+      },
+      "position": {
+        "x": 244.96,
+        "y": 736.8
+      },
+      "description": "The disjunctive clone that is monotone, 0-reproducing, and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneM_2\\cap\\CloneV",
+        "latex": "\\mathsf{M}_2\\cap\\mathsf{V}",
+        "plain": "M_2 ∩ V"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor y}",
+          "latex": "\\{x\\lor y\\}",
+          "plain": "{x∨y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor y}",
+        "latex": "\\{x\\lor y\\}",
+        "plain": "{x∨y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor y",
+            "latex": "x\\lor y",
+            "plain": "x∨y"
+          }
+        ]
+      },
+      "properties": [
+        "disjunctive",
+        "monotone",
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "L",
+      "group": "Affine Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 10.0
+      },
+      "label": {
+        "plain": "L",
+        "latex": "\\mathsf{L}",
+        "sourceLatex": "\\CloneL",
+        "emphasized": true,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "ultra thick"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 667.2
+      },
+      "position": {
+        "x": 427.36,
+        "y": 647.2
+      },
+      "description": "All linear Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is linear}}",
+        "latex": "\\{f\\mid f\\text{ is linear}\\}",
+        "plain": "{f | f is linear}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x \\xor y,\\true}",
+          "latex": "\\{x\\oplus y,\\top\\}",
+          "plain": "{x⊕y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x \\xor y",
+              "latex": "x\\oplus y",
+              "plain": "x⊕y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x \\xor y,\\true}",
+        "latex": "\\{x\\oplus y,\\top\\}",
+        "plain": "{x⊕y, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x \\xor y",
+            "latex": "x\\oplus y",
+            "plain": "x⊕y"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "linear"
+      ]
+    },
+    {
+      "id": "L0",
+      "group": "Affine Functions",
+      "sourcePosition": {
+        "x": 1.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "L0",
+        "latex": "\\mathsf{L_0}",
+        "sourceLatex": "\\CloneL_0",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 508.16,
+        "y": 712.0
+      },
+      "position": {
+        "x": 488.16,
+        "y": 692.0
+      },
+      "description": "All linear 0-reproducing Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\CloneL\\cap\\CloneR_0",
+        "latex": "\\mathsf{L}\\cap\\mathsf{R}_0",
+        "plain": "L ∩ R_0"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\xor y}",
+          "latex": "\\{x\\oplus y\\}",
+          "plain": "{x⊕y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\xor y",
+              "latex": "x\\oplus y",
+              "plain": "x⊕y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\xor y}",
+        "latex": "\\{x\\oplus y\\}",
+        "plain": "{x⊕y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\xor y",
+            "latex": "x\\oplus y",
+            "plain": "x⊕y"
+          }
+        ]
+      },
+      "properties": [
+        "linear",
+        "0-reproducing"
+      ]
+    },
+    {
+      "id": "L1",
+      "group": "Affine Functions",
+      "sourcePosition": {
+        "x": -1.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "L1",
+        "latex": "\\mathsf{L_1}",
+        "sourceLatex": "\\CloneL_1",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 386.56,
+        "y": 712.0
+      },
+      "position": {
+        "x": 366.56,
+        "y": 692.0
+      },
+      "description": "All linear 1-reproducing Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\CloneL\\cap\\CloneR_1",
+        "latex": "\\mathsf{L}\\cap\\mathsf{R}_1",
+        "plain": "L ∩ R_1"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\eq y}",
+          "latex": "\\{x\\leftrightarrow y\\}",
+          "plain": "{x↔y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\eq y",
+              "latex": "x\\leftrightarrow y",
+              "plain": "x↔y"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\eq y}",
+        "latex": "\\{x\\leftrightarrow y\\}",
+        "plain": "{x↔y}",
+        "elements": [
+          {
+            "sourceLatex": "x\\eq y",
+            "latex": "x\\leftrightarrow y",
+            "plain": "x↔y"
+          }
+        ]
+      },
+      "properties": [
+        "linear",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "L3",
+      "group": "Affine Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 9.0
+      },
+      "label": {
+        "plain": "L3",
+        "latex": "\\mathsf{L_3}",
+        "sourceLatex": "\\CloneL_3",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 712.0
+      },
+      "position": {
+        "x": 427.36,
+        "y": 692.0
+      },
+      "description": "All self-dual linear Boolean functions.",
+      "definition": {
+        "sourceLatex": "\\CloneL\\cap\\CloneD",
+        "latex": "\\mathsf{L}\\cap\\mathsf{D}",
+        "plain": "L ∩ D"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\xor y\\xor z\\xor \\true}",
+          "latex": "\\{x\\oplus y\\oplus z\\oplus\\top\\}",
+          "plain": "{x⊕y⊕z⊕⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\xor y\\xor z\\xor \\true",
+              "latex": "x\\oplus y\\oplus z\\oplus\\top",
+              "plain": "x⊕y⊕z⊕⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\xor y\\xor z\\xor \\true}",
+        "latex": "\\{x\\oplus y\\oplus z\\oplus\\top\\}",
+        "plain": "{x⊕y⊕z⊕⊤}",
+        "elements": [
+          {
+            "sourceLatex": "x\\xor y\\xor z\\xor \\true",
+            "latex": "x\\oplus y\\oplus z\\oplus\\top",
+            "plain": "x⊕y⊕z⊕⊤"
+          }
+        ]
+      },
+      "properties": [
+        "linear",
+        "self-dual"
+      ]
+    },
+    {
+      "id": "L2",
+      "group": "Affine Functions",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 8.0
+      },
+      "label": {
+        "plain": "L2",
+        "latex": "\\mathsf{L_2}",
+        "sourceLatex": "\\CloneL_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 756.8
+      },
+      "position": {
+        "x": 427.36,
+        "y": 736.8
+      },
+      "description": "All linear Boolean functions that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneL\\cap\\CloneR_2",
+        "latex": "\\mathsf{L}\\cap\\mathsf{R}_2",
+        "plain": "L ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\threeXor(x,y,z)}",
+          "latex": "\\{x\\oplus y\\oplus z\\}",
+          "plain": "{x⊕y⊕z}",
+          "elements": [
+            {
+              "sourceLatex": "\\threeXor(x,y,z)",
+              "latex": "x\\oplus y\\oplus z",
+              "plain": "x⊕y⊕z"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\threeXor(x,y,z)}",
+        "latex": "\\{x\\oplus y\\oplus z\\}",
+        "plain": "{x⊕y⊕z}",
+        "elements": [
+          {
+            "sourceLatex": "\\threeXor(x,y,z)",
+            "latex": "x\\oplus y\\oplus z",
+            "plain": "x⊕y⊕z"
+          }
+        ]
+      },
+      "properties": [
+        "linear",
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "N",
+      "group": "Negations",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 6.5
+      },
+      "label": {
+        "plain": "N",
+        "latex": "\\mathsf{N}",
+        "sourceLatex": "\\CloneN",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 824.0
+      },
+      "position": {
+        "x": 427.36,
+        "y": 804.0
+      },
+      "description": "All Boolean functions that depend on at most one variable.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ depends on at most one variable}}",
+        "latex": "\\{f\\mid f\\text{ depends on at most one variable}\\}",
+        "plain": "{f | f depends on at most one variable}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\neg x,\\false,\\true}",
+          "latex": "\\{\\neg x,\\bot,\\top\\}",
+          "plain": "{¬x, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "\\neg x",
+              "latex": "\\neg x",
+              "plain": "¬x"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\neg x,\\false,\\true}",
+        "latex": "\\{\\neg x,\\bot,\\top\\}",
+        "plain": "{¬x, ⊥, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "\\neg x",
+            "latex": "\\neg x",
+            "plain": "¬x"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "essentially-unary"
+      ]
+    },
+    {
+      "id": "N2",
+      "group": "Negations",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 5.5
+      },
+      "label": {
+        "plain": "N2",
+        "latex": "\\mathsf{N_2}",
+        "sourceLatex": "\\CloneN_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 868.8
+      },
+      "position": {
+        "x": 427.36,
+        "y": 848.8
+      },
+      "description": "The essentially unary self-dual clone.",
+      "definition": {
+        "sourceLatex": "\\CloneL_3\\cap\\CloneN",
+        "latex": "\\mathsf{L}_3\\cap\\mathsf{N}",
+        "plain": "L_3 ∩ N"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\neg x}",
+          "latex": "\\{\\neg x\\}",
+          "plain": "{¬x}",
+          "elements": [
+            {
+              "sourceLatex": "\\neg x",
+              "latex": "\\neg x",
+              "plain": "¬x"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\neg x}",
+        "latex": "\\{\\neg x\\}",
+        "plain": "{¬x}",
+        "elements": [
+          {
+            "sourceLatex": "\\neg x",
+            "latex": "\\neg x",
+            "plain": "¬x"
+          }
+        ]
+      },
+      "properties": [
+        "essentially-unary",
+        "self-dual"
+      ]
+    },
+    {
+      "id": "I",
+      "group": "Identities",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 2.5
+      },
+      "label": {
+        "plain": "I",
+        "latex": "\\mathsf{I}",
+        "sourceLatex": "\\CloneI",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 1003.2
+      },
+      "position": {
+        "x": 427.36,
+        "y": 983.2
+      },
+      "description": "All Boolean functions that are a projection or a constant.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is a projection or a constant}}",
+        "latex": "\\{f\\mid f\\text{ is a projection or a constant}\\}",
+        "plain": "{f | f is a projection or a constant}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\false,\\true}",
+          "latex": "\\{\\bot,\\top\\}",
+          "plain": "{⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\false,\\true}",
+        "latex": "\\{\\bot,\\top\\}",
+        "plain": "{⊥, ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "projections-and-constants"
+      ]
+    },
+    {
+      "id": "I0",
+      "group": "Identities",
+      "sourcePosition": {
+        "x": 1.0,
+        "y": 1.5
+      },
+      "label": {
+        "plain": "I0",
+        "latex": "\\mathsf{I_0}",
+        "sourceLatex": "\\CloneI_0",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 508.16,
+        "y": 1048.0
+      },
+      "position": {
+        "x": 488.16,
+        "y": 1028.0
+      },
+      "description": "All projections together with the constant-false function.",
+      "definition": {
+        "sourceLatex": "\\CloneR_0\\cap\\CloneI",
+        "latex": "\\mathsf{R}_0\\cap\\mathsf{I}",
+        "plain": "R_0 ∩ I"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\false}",
+          "latex": "\\{\\bot\\}",
+          "plain": "{⊥}",
+          "elements": [
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\false}",
+        "latex": "\\{\\bot\\}",
+        "plain": "{⊥}",
+        "elements": [
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "projections",
+        "0-reproducing"
+      ]
+    },
+    {
+      "id": "I1",
+      "group": "Identities",
+      "sourcePosition": {
+        "x": -1.0,
+        "y": 1.5
+      },
+      "label": {
+        "plain": "I1",
+        "latex": "\\mathsf{I_1}",
+        "sourceLatex": "\\CloneI_1",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 386.56,
+        "y": 1048.0
+      },
+      "position": {
+        "x": 366.56,
+        "y": 1028.0
+      },
+      "description": "All projections together with the constant-true function.",
+      "definition": {
+        "sourceLatex": "\\CloneR_1\\cap\\CloneI",
+        "latex": "\\mathsf{R}_1\\cap\\mathsf{I}",
+        "plain": "R_1 ∩ I"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\true}",
+          "latex": "\\{\\top\\}",
+          "plain": "{⊤}",
+          "elements": [
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\true}",
+        "latex": "\\{\\top\\}",
+        "plain": "{⊤}",
+        "elements": [
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "projections",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "I2",
+      "group": "Identities",
+      "sourcePosition": {
+        "x": 0.0,
+        "y": 0.5
+      },
+      "label": {
+        "plain": "I2",
+        "latex": "\\mathsf{I_2}",
+        "sourceLatex": "\\CloneI_2",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white"
+        ]
+      },
+      "centerPosition": {
+        "x": 447.36,
+        "y": 1092.8
+      },
+      "position": {
+        "x": 427.36,
+        "y": 1072.8
+      },
+      "description": "All projections, without constants.",
+      "definition": {
+        "sourceLatex": "\\CloneR_2\\cap\\CloneI",
+        "latex": "\\mathsf{R}_2\\cap\\mathsf{I}",
+        "plain": "R_2 ∩ I"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{}",
+          "latex": "\\varnothing",
+          "plain": "∅",
+          "elements": []
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{}",
+        "latex": "\\varnothing",
+        "plain": "∅",
+        "elements": []
+      },
+      "properties": [
+        "projections",
+        "0-reproducing",
+        "1-reproducing"
+      ]
+    },
+    {
+      "id": "Sn0",
+      "group": "0-separating 1",
+      "sourcePosition": {
+        "x": -6.7,
+        "y": 15.05
+      },
+      "label": {
+        "plain": "S₀ⁿ",
+        "latex": "\\mathsf{S}_{0}^{n}",
+        "sourceLatex": "\\CloneS_0^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 0-separating Boolean functions of degree n.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating of degree } n}",
+        "latex": "\\{f \\mid f \\text{ is 0-separating of degree n}\\}",
+        "plain": "{f | f is 0-separating of degree n}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\limp y,T^{n+1}_2}",
+          "latex": "\\{x\\to y,T^{n+1}_{2}\\}",
+          "plain": "{x→y, T_2^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            },
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\limp y,T^{n+1}_2}",
+        "latex": "\\{x\\to y,T^{n+1}_{2}\\}",
+        "plain": "{x→y, T_2^(n+1)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\limp y",
+            "latex": "x\\to y",
+            "plain": "x→y"
+          },
+          {
+            "sourceLatex": "T^{n+1}_2",
+            "latex": "T^{n+1}_{2}",
+            "plain": "T_2^(n+1)"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-symbolic"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "0"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 40.0,
+        "y": 440.96
+      },
+      "position": {
+        "x": 20.0,
+        "y": 420.96
+      }
+    },
+    {
+      "id": "Sn02",
+      "group": "0-separating 2",
+      "sourcePosition": {
+        "x": -5.8,
+        "y": 13.75
+      },
+      "label": {
+        "plain": "S₀₂ⁿ",
+        "latex": "\\mathsf{S}_{02}^{n}",
+        "sourceLatex": "\\CloneS_{02}^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 0-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^n\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{0}^{n}\\cap\\mathsf{R}_2",
+        "plain": "S_0^n ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{n+1}_2}",
+          "latex": "\\{x\\lor(y\\nrightarrow z),T^{n+1}_{2}\\}",
+          "plain": "{x∨(y↛z), T_2^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            },
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{n+1}_2}",
+        "latex": "\\{x\\lor(y\\nrightarrow z),T^{n+1}_{2}\\}",
+        "plain": "{x∨(y↛z), T_2^(n+1)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\lor(y\\nimp z)",
+            "latex": "x\\lor(y\\nrightarrow z)",
+            "plain": "x∨(y↛z)"
+          },
+          {
+            "sourceLatex": "T^{n+1}_2",
+            "latex": "T^{n+1}_{2}",
+            "plain": "T_2^(n+1)"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-symbolic",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "02"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 94.72,
+        "y": 499.2
+      },
+      "position": {
+        "x": 74.72,
+        "y": 479.2
+      }
+    },
+    {
+      "id": "Sn01",
+      "group": "0-separating 3",
+      "sourcePosition": {
+        "x": -4.8,
+        "y": 13.75
+      },
+      "label": {
+        "plain": "S₀₁ⁿ",
+        "latex": "\\mathsf{S}_{01}^{n}",
+        "sourceLatex": "\\CloneS_{01}^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 0-separating Boolean functions of degree n that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^n\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}^{n}\\cap\\mathsf{M}",
+        "plain": "S_0^n ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{n+1}_2,\\true}",
+          "latex": "\\{T^{n+1}_{2},\\top\\}",
+          "plain": "{T_2^(n+1), ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{n+1}_2,\\true}",
+        "latex": "\\{T^{n+1}_{2},\\top\\}",
+        "plain": "{T_2^(n+1), ⊤}",
+        "elements": [
+          {
+            "sourceLatex": "T^{n+1}_2",
+            "latex": "T^{n+1}_{2}",
+            "plain": "T_2^(n+1)"
+          },
+          {
+            "sourceLatex": "\\true",
+            "latex": "\\top",
+            "plain": "⊤"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-symbolic",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "01"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 155.52,
+        "y": 499.2
+      },
+      "position": {
+        "x": 135.52,
+        "y": 479.2
+      }
+    },
+    {
+      "id": "Sn00",
+      "group": "0-separating 4",
+      "sourcePosition": {
+        "x": -3.9,
+        "y": 12.45
+      },
+      "label": {
+        "plain": "S₀₀ⁿ",
+        "latex": "\\mathsf{S}_{00}^{n}",
+        "sourceLatex": "\\CloneS_{00}^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 0-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_0^n\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{0}^{n}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_0^n ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{n+1}_2}",
+          "latex": "\\{T^{n+1}_{2}\\}",
+          "plain": "{T_2^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{n+1}_2}",
+        "latex": "\\{T^{n+1}_{2}\\}",
+        "plain": "{T_2^(n+1)}",
+        "elements": [
+          {
+            "sourceLatex": "T^{n+1}_2",
+            "latex": "T^{n+1}_{2}",
+            "plain": "T_2^(n+1)"
+          }
+        ]
+      },
+      "properties": [
+        "0-separating-degree-symbolic",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 0,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "00"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 210.24,
+        "y": 557.44
+      },
+      "position": {
+        "x": 190.24,
+        "y": 537.44
+      }
+    },
+    {
+      "id": "Sn10",
+      "group": "1-separating 4",
+      "sourcePosition": {
+        "x": 3.9,
+        "y": 12.45
+      },
+      "label": {
+        "plain": "S₁₀ⁿ",
+        "latex": "\\mathsf{S}_{10}^{n}",
+        "sourceLatex": "\\CloneS_{10}^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 1-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing and monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^n\\cap\\CloneR_2\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}^{n}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+        "plain": "S_1^n ∩ R_2 ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{n+1}_n}",
+          "latex": "\\{T^{n+1}_{n}\\}",
+          "plain": "{T_n^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{n+1}_n}",
+        "latex": "\\{T^{n+1}_{n}\\}",
+        "plain": "{T_n^(n+1)}",
+        "elements": [
+          {
+            "sourceLatex": "T^{n+1}_n",
+            "latex": "T^{n+1}_{n}",
+            "plain": "T_n^(n+1)"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-symbolic",
+        "0-reproducing",
+        "1-reproducing",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "10"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 684.48,
+        "y": 557.44
+      },
+      "position": {
+        "x": 664.48,
+        "y": 537.44
+      }
+    },
+    {
+      "id": "Sn11",
+      "group": "1-separating 3",
+      "sourcePosition": {
+        "x": 4.8,
+        "y": 13.75
+      },
+      "label": {
+        "plain": "S₁₁ⁿ",
+        "latex": "\\mathsf{S}_{11}^{n}",
+        "sourceLatex": "\\CloneS_{11}^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 1-separating Boolean functions of degree n that are monotone.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^n\\cap\\CloneM",
+        "latex": "\\mathsf{S}_{1}^{n}\\cap\\mathsf{M}",
+        "plain": "S_1^n ∩ M"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{T^{n+1}_n,\\false}",
+          "latex": "\\{T^{n+1}_{n},\\bot\\}",
+          "plain": "{T_n^(n+1), ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{T^{n+1}_n,\\false}",
+        "latex": "\\{T^{n+1}_{n},\\bot\\}",
+        "plain": "{T_n^(n+1), ⊥}",
+        "elements": [
+          {
+            "sourceLatex": "T^{n+1}_n",
+            "latex": "T^{n+1}_{n}",
+            "plain": "T_n^(n+1)"
+          },
+          {
+            "sourceLatex": "\\false",
+            "latex": "\\bot",
+            "plain": "⊥"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-symbolic",
+        "monotone"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "11"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 739.2,
+        "y": 499.2
+      },
+      "position": {
+        "x": 719.2,
+        "y": 479.2
+      }
+    },
+    {
+      "id": "Sn12",
+      "group": "1-separating 2",
+      "sourcePosition": {
+        "x": 5.8,
+        "y": 13.75
+      },
+      "label": {
+        "plain": "S₁₂ⁿ",
+        "latex": "\\mathsf{S}_{12}^{n}",
+        "sourceLatex": "\\CloneS_{12}^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 1-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing.",
+      "definition": {
+        "sourceLatex": "\\CloneS_1^n\\cap\\CloneR_2",
+        "latex": "\\mathsf{S}_{1}^{n}\\cap\\mathsf{R}_2",
+        "plain": "S_1^n ∩ R_2"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{\\aimp(x,y,z),T^{n+1}_n}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z),T^{n+1}_{n}\\}",
+          "plain": "{aimp(x,y,z), T_n^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            },
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{\\aimp(x,y,z),T^{n+1}_n}",
+        "latex": "\\{\\operatorname{aimp}(x,y,z),T^{n+1}_{n}\\}",
+        "plain": "{aimp(x,y,z), T_n^(n+1)}",
+        "elements": [
+          {
+            "sourceLatex": "\\aimp(x,y,z)",
+            "latex": "\\operatorname{aimp}(x,y,z)",
+            "plain": "aimp(x,y,z)"
+          },
+          {
+            "sourceLatex": "T^{n+1}_n",
+            "latex": "T^{n+1}_{n}",
+            "plain": "T_n^(n+1)"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-symbolic",
+        "0-reproducing",
+        "1-reproducing"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "12"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 800.0,
+        "y": 499.2
+      },
+      "position": {
+        "x": 780.0,
+        "y": 479.2
+      }
+    },
+    {
+      "id": "Sn1",
+      "group": "1-separating 1",
+      "sourcePosition": {
+        "x": 6.7,
+        "y": 15.05
+      },
+      "label": {
+        "plain": "S₁ⁿ",
+        "latex": "\\mathsf{S}_{1}^{n}",
+        "sourceLatex": "\\CloneS_1^n",
+        "emphasized": false,
+        "sourceStyle": [
+          "clonefill",
+          "fill=white",
+          "synthetic-symbolic-layer"
+        ]
+      },
+      "description": "All 1-separating Boolean functions of degree n.",
+      "definition": {
+        "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating of degree } n}",
+        "latex": "\\{f \\mid f \\text{ is 1-separating of degree n}\\}",
+        "plain": "{f | f is 1-separating of degree n}"
+      },
+      "bases": [
+        {
+          "sourceLatex": "\\set{x\\nimp y,T^{n+1}_n}",
+          "latex": "\\{x\\nrightarrow y,T^{n+1}_{n}\\}",
+          "plain": "{x↛y, T_n^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            },
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            }
+          ]
+        }
+      ],
+      "basis": {
+        "sourceLatex": "\\set{x\\nimp y,T^{n+1}_n}",
+        "latex": "\\{x\\nrightarrow y,T^{n+1}_{n}\\}",
+        "plain": "{x↛y, T_n^(n+1)}",
+        "elements": [
+          {
+            "sourceLatex": "x\\nimp y",
+            "latex": "x\\nrightarrow y",
+            "plain": "x↛y"
+          },
+          {
+            "sourceLatex": "T^{n+1}_n",
+            "latex": "T^{n+1}_{n}",
+            "plain": "T_n^(n+1)"
+          }
+        ]
+      },
+      "properties": [
+        "1-separating-degree-symbolic"
+      ],
+      "separating": {
+        "value": 1,
+        "degree": "n",
+        "degreeKind": "symbolic",
+        "familySubscript": "1"
+      },
+      "parameterConstraint": "n ≥ 4",
+      "displayRole": "generic-family-layer",
+      "centerPosition": {
+        "x": 854.72,
+        "y": 440.96
+      },
+      "position": {
+        "x": 834.72,
+        "y": 420.96
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1:R2->R1",
+      "source": "R2",
+      "target": "R1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e2:R2->R0",
+      "source": "R2",
+      "target": "R0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e3:R1->BF",
+      "source": "R1",
+      "target": "BF",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e4:R0->BF",
+      "source": "R0",
+      "target": "BF",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e5:M2->M1",
+      "source": "M2",
+      "target": "M1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e6:M2->R2",
+      "source": "M2",
+      "target": "R2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 120,
+        "in": 240,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 120,
+        "in": 240,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e7:M2->M0",
+      "source": "M2",
+      "target": "M0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e8:M1->R1",
+      "source": "M1",
+      "target": "R1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e9:M1->M",
+      "source": "M1",
+      "target": "M",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e10:M0->R0",
+      "source": "M0",
+      "target": "R0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e11:M0->M",
+      "source": "M0",
+      "target": "M",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e12:M->BF",
+      "source": "M",
+      "target": "BF",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 50,
+        "in": 306,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 50,
+        "in": 306,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e14:S31->S21",
+      "source": "S31",
+      "target": "S21",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e15:S21->R0",
+      "source": "S21",
+      "target": "R0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e16:S12->S1",
+      "source": "S12",
+      "target": "S1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e18:S312->S31",
+      "source": "S312",
+      "target": "S31",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e19:S312->S212",
+      "source": "S312",
+      "target": "S212",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e20:S212->S21",
+      "source": "S212",
+      "target": "S21",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e21:S212->R2",
+      "source": "S212",
+      "target": "R2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e22:S11->S1",
+      "source": "S11",
+      "target": "S1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e24:S311->S31",
+      "source": "S311",
+      "target": "S31",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e25:S311->S211",
+      "source": "S311",
+      "target": "S211",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e26:S211->S21",
+      "source": "S211",
+      "target": "S21",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e27:S211->M0",
+      "source": "S211",
+      "target": "M0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e28:S10->S12",
+      "source": "S10",
+      "target": "S12",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e29:S10->S11",
+      "source": "S10",
+      "target": "S11",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e31:S310->S312",
+      "source": "S310",
+      "target": "S312",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e32:S310->S311",
+      "source": "S310",
+      "target": "S311",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e33:S310->S210",
+      "source": "S310",
+      "target": "S210",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e34:S210->S212",
+      "source": "S210",
+      "target": "S212",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e35:S210->S211",
+      "source": "S210",
+      "target": "S211",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e36:S210->M2",
+      "source": "S210",
+      "target": "M2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e38:S30->S20",
+      "source": "S30",
+      "target": "S20",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e39:S20->R1",
+      "source": "S20",
+      "target": "R1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e40:S02->S0",
+      "source": "S02",
+      "target": "S0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e42:S302->S30",
+      "source": "S302",
+      "target": "S30",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e43:S302->S202",
+      "source": "S302",
+      "target": "S202",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e44:S202->S20",
+      "source": "S202",
+      "target": "S20",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e45:S202->R2",
+      "source": "S202",
+      "target": "R2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e46:S01->S0",
+      "source": "S01",
+      "target": "S0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e48:S301->S30",
+      "source": "S301",
+      "target": "S30",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e49:S301->S201",
+      "source": "S301",
+      "target": "S201",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e50:S201->S20",
+      "source": "S201",
+      "target": "S20",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e51:S201->M1",
+      "source": "S201",
+      "target": "M1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e52:S00->S02",
+      "source": "S00",
+      "target": "S02",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e53:S00->S01",
+      "source": "S00",
+      "target": "S01",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e55:S300->S302",
+      "source": "S300",
+      "target": "S302",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e56:S300->S301",
+      "source": "S300",
+      "target": "S301",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e57:S300->S200",
+      "source": "S300",
+      "target": "S200",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e58:S200->S202",
+      "source": "S200",
+      "target": "S202",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e59:S200->S201",
+      "source": "S200",
+      "target": "S201",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e60:S200->M2",
+      "source": "S200",
+      "target": "M2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e61:D2->S200",
+      "source": "D2",
+      "target": "S200",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e62:D2->S210",
+      "source": "D2",
+      "target": "S210",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e63:D2->D1",
+      "source": "D2",
+      "target": "D1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e64:D1->R2",
+      "source": "D1",
+      "target": "R2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 135,
+        "in": 220,
+        "looseness": 0.95
+      },
+      "sourceTikzOptions": {
+        "out": 135,
+        "in": 220,
+        "looseness": 0.95
+      }
+    },
+    {
+      "id": "e65:D1->D",
+      "source": "D1",
+      "target": "D",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e66:D->BF",
+      "source": "D",
+      "target": "BF",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 41,
+        "in": 306,
+        "looseness": 0.85
+      },
+      "sourceTikzOptions": {
+        "out": 41,
+        "in": 306,
+        "looseness": 0.85
+      }
+    },
+    {
+      "id": "e67:L2->L1",
+      "source": "L2",
+      "target": "L1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e68:L2->L3",
+      "source": "L2",
+      "target": "L3",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e69:L2->L0",
+      "source": "L2",
+      "target": "L0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e70:L2->D1",
+      "source": "L2",
+      "target": "D1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 50,
+        "in": 310,
+        "looseness": 0.6
+      },
+      "sourceTikzOptions": {
+        "out": 50,
+        "in": 310,
+        "looseness": 0.6
+      }
+    },
+    {
+      "id": "e71:L1->R1",
+      "source": "L1",
+      "target": "R1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 110,
+        "in": 250,
+        "looseness": 0.9
+      },
+      "sourceTikzOptions": {
+        "out": 110,
+        "in": 250,
+        "looseness": 0.9
+      }
+    },
+    {
+      "id": "e72:L1->L",
+      "source": "L1",
+      "target": "L",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e73:L3->L",
+      "source": "L3",
+      "target": "L",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e74:L3->D",
+      "source": "L3",
+      "target": "D",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 130,
+        "in": 230,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 130,
+        "in": 230,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e75:L0->L",
+      "source": "L0",
+      "target": "L",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e76:L0->R0",
+      "source": "L0",
+      "target": "R0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 70,
+        "in": 290,
+        "looseness": 0.9
+      },
+      "sourceTikzOptions": {
+        "out": 70,
+        "in": 290,
+        "looseness": 0.9
+      }
+    },
+    {
+      "id": "e77:L->BF",
+      "source": "L",
+      "target": "BF",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 55,
+        "in": 306,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 55,
+        "in": 306,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e78:E2->E1",
+      "source": "E2",
+      "target": "E1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e79:E2->S10",
+      "source": "E2",
+      "target": "S10",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e80:E2->E0",
+      "source": "E2",
+      "target": "E0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e81:E1->M1",
+      "source": "E1",
+      "target": "M1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e82:E1->E",
+      "source": "E1",
+      "target": "E",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e83:E0->E",
+      "source": "E0",
+      "target": "E",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e84:E0->S11",
+      "source": "E0",
+      "target": "S11",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e85:E->M",
+      "source": "E",
+      "target": "M",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e86:V2->V1",
+      "source": "V2",
+      "target": "V1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e87:V2->S00",
+      "source": "V2",
+      "target": "S00",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e88:V2->V0",
+      "source": "V2",
+      "target": "V0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e89:V1->S01",
+      "source": "V1",
+      "target": "S01",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e90:V1->V",
+      "source": "V1",
+      "target": "V",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e91:V0->V",
+      "source": "V0",
+      "target": "V",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e92:V0->M0",
+      "source": "V0",
+      "target": "M0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e93:V->M",
+      "source": "V",
+      "target": "M",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e94:N2->N",
+      "source": "N2",
+      "target": "N",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e95:N2->L3",
+      "source": "N2",
+      "target": "L3",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 50,
+        "in": 310,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 50,
+        "in": 310,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e96:N->L",
+      "source": "N",
+      "target": "L",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 125,
+        "in": 230,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 125,
+        "in": 230,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e97:I2->I1",
+      "source": "I2",
+      "target": "I1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e98:I2->I0",
+      "source": "I2",
+      "target": "I0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e99:I2->E2",
+      "source": "I2",
+      "target": "E2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e100:I2->V2",
+      "source": "I2",
+      "target": "V2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e101:I2->N2",
+      "source": "I2",
+      "target": "N2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 115,
+        "in": 240,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 115,
+        "in": 240,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e102:I2->L2",
+      "source": "I2",
+      "target": "L2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 115,
+        "in": 240,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 115,
+        "in": 240,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e103:I2->D2",
+      "source": "I2",
+      "target": "D2",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 70,
+        "in": 290,
+        "looseness": 0.7
+      },
+      "sourceTikzOptions": {
+        "out": 70,
+        "in": 290,
+        "looseness": 0.7
+      }
+    },
+    {
+      "id": "e104:I1->V1",
+      "source": "I1",
+      "target": "V1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e105:I1->L1",
+      "source": "I1",
+      "target": "L1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 110,
+        "in": 250,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 110,
+        "in": 250,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e106:I1->E1",
+      "source": "I1",
+      "target": "E1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e107:I1->I",
+      "source": "I1",
+      "target": "I",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e108:I0->I",
+      "source": "I0",
+      "target": "I",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e109:I0->L0",
+      "source": "I0",
+      "target": "L0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 70,
+        "in": 290,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 70,
+        "in": 290,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e110:I0->V0",
+      "source": "I0",
+      "target": "V0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e111:I0->E0",
+      "source": "I0",
+      "target": "E0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e112:I->V",
+      "source": "I",
+      "target": "V",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e113:I->N",
+      "source": "I",
+      "target": "N",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": {
+        "out": 62,
+        "in": 312,
+        "looseness": 0.8
+      },
+      "sourceTikzOptions": {
+        "out": 62,
+        "in": 312,
+        "looseness": 0.8
+      }
+    },
+    {
+      "id": "e114:I->E",
+      "source": "I",
+      "target": "E",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e115:S0->Sn0",
+      "source": "S0",
+      "target": "Sn0",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e116:Sn0->S30",
+      "source": "Sn0",
+      "target": "S30",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e117:S02->Sn02",
+      "source": "S02",
+      "target": "Sn02",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e118:Sn02->S302",
+      "source": "Sn02",
+      "target": "S302",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e119:S01->Sn01",
+      "source": "S01",
+      "target": "Sn01",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e120:Sn01->S301",
+      "source": "Sn01",
+      "target": "S301",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e121:S00->Sn00",
+      "source": "S00",
+      "target": "Sn00",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e122:Sn00->S300",
+      "source": "Sn00",
+      "target": "S300",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e123:S10->Sn10",
+      "source": "S10",
+      "target": "Sn10",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e124:Sn10->S310",
+      "source": "Sn10",
+      "target": "S310",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e125:S11->Sn11",
+      "source": "S11",
+      "target": "Sn11",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e126:Sn11->S311",
+      "source": "Sn11",
+      "target": "S311",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e127:S12->Sn12",
+      "source": "S12",
+      "target": "Sn12",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e128:Sn12->S312",
+      "source": "Sn12",
+      "target": "S312",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e129:S1->Sn1",
+      "source": "S1",
+      "target": "Sn1",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e130:Sn1->S31",
+      "source": "Sn1",
+      "target": "S31",
+      "direction": "upward",
+      "lineStyle": "dashed",
+      "semanticKind": "displayed-gap",
+      "routing": null,
+      "sourceTikzOptions": {
+        "dashed": true
+      }
+    },
+    {
+      "id": "e131:Sn02->Sn0",
+      "source": "Sn02",
+      "target": "Sn0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e132:Sn01->Sn0",
+      "source": "Sn01",
+      "target": "Sn0",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e133:Sn00->Sn02",
+      "source": "Sn00",
+      "target": "Sn02",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e134:Sn00->Sn01",
+      "source": "Sn00",
+      "target": "Sn01",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e135:Sn12->Sn1",
+      "source": "Sn12",
+      "target": "Sn1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e136:Sn11->Sn1",
+      "source": "Sn11",
+      "target": "Sn1",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e137:Sn10->Sn12",
+      "source": "Sn10",
+      "target": "Sn12",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    },
+    {
+      "id": "e138:Sn10->Sn11",
+      "source": "Sn10",
+      "target": "Sn11",
+      "direction": "upward",
+      "lineStyle": "solid",
+      "semanticKind": "cover",
+      "routing": null,
+      "sourceTikzOptions": {}
+    }
+  ],
+  "statistics": {
+    "nodeCount": 62,
+    "edgeCount": 130,
+    "solidEdgeCount": 114,
+    "dashedEdgeCount": 16,
+    "degree2SCloneCount": 8,
+    "degree3SCloneCount": 8,
+    "symbolicNSCloneCount": 8,
+    "unboundedSCloneCount": 8,
+    "metadataRecordsCompared": 54,
+    "metadataRecordsRealignedToExactTableNotation": 54,
+    "sFamilyBasisRecordsCorrected": 24
+  }
+}

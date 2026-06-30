@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import latticeData from '../source material/posts-lattice.json'
+import rawLatticeData from './data/posts-lattice.json'
 import { wikipediaCloneNamesById } from './wikipediaCloneNames'
+
+type GraphFixtureData = {
+  nodes: Array<{ id: string }>
+}
+
+const latticeData: GraphFixtureData = rawLatticeData
 
 describe('wikipediaCloneNamesById', () => {
   it('records a Wikipedia clone name for every displayed lattice node', () => {

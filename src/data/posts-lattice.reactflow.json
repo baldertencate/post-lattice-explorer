@@ -1,0 +1,6401 @@
+{
+  "schemaVersion": 3,
+  "id": "posts-lattice",
+  "title": "Post's lattice with a schematic symbolic n-layer",
+  "coordinateSystem": {
+    "source": {
+      "type": "tikz",
+      "xUnitCm": 0.95,
+      "yUnitCm": 0.7,
+      "yAxisDirection": "up"
+    },
+    "browser": {
+      "pxPerCm": 64.0,
+      "marginPx": 40.0,
+      "nodeSizePx": 40.0,
+      "yAxisDirection": "down",
+      "widthPx": 894.72,
+      "heightPx": 1132.8,
+      "positionAnchor": "top-left"
+    },
+    "transform": {
+      "centerX": "marginPx + (sourceX - minSourceX) * xUnitCm * pxPerCm",
+      "centerY": "marginPx + (maxSourceY - sourceY) * yUnitCm * pxPerCm",
+      "minSourceX": -6.7,
+      "maxSourceX": 6.7,
+      "minSourceY": 0.5,
+      "maxSourceY": 24.0
+    }
+  },
+  "cloneFamilies": [
+    {
+      "id": "S0",
+      "labelLatex": "\\mathsf{S}_{0}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S20",
+        "3": "S30",
+        "n": "Sn0",
+        "unbounded": "S0"
+      }
+    },
+    {
+      "id": "S02",
+      "labelLatex": "\\mathsf{S}_{02}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S202",
+        "3": "S302",
+        "n": "Sn02",
+        "unbounded": "S02"
+      }
+    },
+    {
+      "id": "S01",
+      "labelLatex": "\\mathsf{S}_{01}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S201",
+        "3": "S301",
+        "n": "Sn01",
+        "unbounded": "S01"
+      }
+    },
+    {
+      "id": "S00",
+      "labelLatex": "\\mathsf{S}_{00}",
+      "separatingValue": 0,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S200",
+        "3": "S300",
+        "n": "Sn00",
+        "unbounded": "S00"
+      }
+    },
+    {
+      "id": "S1",
+      "labelLatex": "\\mathsf{S}_{1}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S21",
+        "3": "S31",
+        "n": "Sn1",
+        "unbounded": "S1"
+      }
+    },
+    {
+      "id": "S12",
+      "labelLatex": "\\mathsf{S}_{12}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S212",
+        "3": "S312",
+        "n": "Sn12",
+        "unbounded": "S12"
+      }
+    },
+    {
+      "id": "S11",
+      "labelLatex": "\\mathsf{S}_{11}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S211",
+        "3": "S311",
+        "n": "Sn11",
+        "unbounded": "S11"
+      }
+    },
+    {
+      "id": "S10",
+      "labelLatex": "\\mathsf{S}_{10}",
+      "separatingValue": 1,
+      "parameterConstraint": "n ≥ 4",
+      "members": {
+        "2": "S210",
+        "3": "S310",
+        "n": "Sn10",
+        "unbounded": "S10"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BF",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 20.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "BF",
+        "labelLatex": "\\mathsf{BF}",
+        "sourceLatex": "\\CloneBF",
+        "description": "All Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\text{All Boolean functions}",
+          "latex": "\\text{All Boolean functions}",
+          "plain": "All Boolean functions"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land y, \\neg x}",
+            "latex": "\\{x\\land y, \\neg x\\}",
+            "plain": "{x∧y, ¬x}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\neg x",
+                "latex": "\\neg x",
+                "plain": "¬x"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land y, \\neg x}",
+          "latex": "\\{x\\land y, \\neg x\\}",
+          "plain": "{x∧y, ¬x}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\neg x",
+              "latex": "\\neg x",
+              "plain": "¬x"
+            }
+          ]
+        },
+        "properties": [
+          "boolean"
+        ],
+        "group": "BF and c-Reproducing Functions",
+        "emphasized": true,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 24.0
+        }
+      }
+    },
+    {
+      "id": "R1",
+      "type": "latticeNode",
+      "position": {
+        "x": 366.56,
+        "y": 64.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "R1",
+        "labelLatex": "\\mathsf{R_1}",
+        "sourceLatex": "\\CloneR_1",
+        "description": "All 1-reproducing Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\true-reproducing}}",
+          "latex": "\\{f\\mid f\\text{ is 1-reproducing}\\}",
+          "plain": "{f | f is 1-reproducing}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, x\\eq y}",
+            "latex": "\\{x\\lor y, x\\leftrightarrow y\\}",
+            "plain": "{x∨y, x↔y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "x\\eq y",
+                "latex": "x\\leftrightarrow y",
+                "plain": "x↔y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, x\\eq y}",
+          "latex": "\\{x\\lor y, x\\leftrightarrow y\\}",
+          "plain": "{x∨y, x↔y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\eq y",
+              "latex": "x\\leftrightarrow y",
+              "plain": "x↔y"
+            }
+          ]
+        },
+        "properties": [
+          "1-reproducing"
+        ],
+        "group": "BF and c-Reproducing Functions",
+        "emphasized": true,
+        "sourcePosition": {
+          "x": -1.0,
+          "y": 23.0
+        }
+      }
+    },
+    {
+      "id": "R0",
+      "type": "latticeNode",
+      "position": {
+        "x": 488.16,
+        "y": 64.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "R0",
+        "labelLatex": "\\mathsf{R_0}",
+        "sourceLatex": "\\CloneR_0",
+        "description": "All 0-reproducing Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\false-reproducing}}",
+          "latex": "\\{f\\mid f\\text{ is 0-reproducing}\\}",
+          "plain": "{f | f is 0-reproducing}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land y, x\\xor y}",
+            "latex": "\\{x\\land y, x\\oplus y\\}",
+            "plain": "{x∧y, x⊕y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "x\\xor y",
+                "latex": "x\\oplus y",
+                "plain": "x⊕y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land y, x\\xor y}",
+          "latex": "\\{x\\land y, x\\oplus y\\}",
+          "plain": "{x∧y, x⊕y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "x\\xor y",
+              "latex": "x\\oplus y",
+              "plain": "x⊕y"
+            }
+          ]
+        },
+        "properties": [
+          "0-reproducing"
+        ],
+        "group": "BF and c-Reproducing Functions",
+        "emphasized": true,
+        "sourcePosition": {
+          "x": 1.0,
+          "y": 23.0
+        }
+      }
+    },
+    {
+      "id": "R2",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 109.6
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "R2",
+        "labelLatex": "\\mathsf{R_2}",
+        "sourceLatex": "\\CloneR_2",
+        "description": "All Boolean functions that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneR_0\\cap\\CloneR_1",
+          "latex": "\\mathsf{R}_0\\cap\\mathsf{R}_1",
+          "plain": "R_0 ∩ R_1"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, x\\land(y\\eq z)}",
+            "latex": "\\{x\\lor y, x\\land(y\\leftrightarrow z)\\}",
+            "plain": "{x∨y, x∧(y↔z)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "x\\land(y\\eq z)",
+                "latex": "x\\land(y\\leftrightarrow z)",
+                "plain": "x∧(y↔z)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, x\\land(y\\eq z)}",
+          "latex": "\\{x\\lor y, x\\land(y\\leftrightarrow z)\\}",
+          "plain": "{x∨y, x∧(y↔z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land(y\\eq z)",
+              "latex": "x\\land(y\\leftrightarrow z)",
+              "plain": "x∧(y↔z)"
+            }
+          ]
+        },
+        "properties": [
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "BF and c-Reproducing Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 22.0
+        }
+      }
+    },
+    {
+      "id": "M",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 199.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "M",
+        "labelLatex": "\\mathsf{M}",
+        "sourceLatex": "\\CloneM",
+        "description": "All monotone Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is monotone}}",
+          "latex": "\\{f\\mid f\\text{ is monotone}\\}",
+          "plain": "{f | f is monotone}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, x\\land y, \\false, \\true}",
+            "latex": "\\{x\\lor y, x\\land y, \\bot, \\top\\}",
+            "plain": "{x∨y, x∧y, ⊥, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, x\\land y, \\false, \\true}",
+          "latex": "\\{x\\lor y, x\\land y, \\bot, \\top\\}",
+          "plain": "{x∨y, x∧y, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "monotone"
+        ],
+        "group": "Monotone Functions",
+        "emphasized": true,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 20.0
+        }
+      }
+    },
+    {
+      "id": "M1",
+      "type": "latticeNode",
+      "position": {
+        "x": 366.56,
+        "y": 244.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "M1",
+        "labelLatex": "\\mathsf{M_1}",
+        "sourceLatex": "\\CloneM_1",
+        "description": "All monotone 1-reproducing Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\CloneM\\cap\\CloneR_1",
+          "latex": "\\mathsf{M}\\cap\\mathsf{R}_1",
+          "plain": "M ∩ R_1"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, x\\land y, \\true}",
+            "latex": "\\{x\\lor y, x\\land y, \\top\\}",
+            "plain": "{x∨y, x∧y, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, x\\land y, \\true}",
+          "latex": "\\{x\\lor y, x\\land y, \\top\\}",
+          "plain": "{x∨y, x∧y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "monotone",
+          "1-reproducing"
+        ],
+        "group": "Monotone Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -1.0,
+          "y": 19.0
+        }
+      }
+    },
+    {
+      "id": "M0",
+      "type": "latticeNode",
+      "position": {
+        "x": 488.16,
+        "y": 244.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "M0",
+        "labelLatex": "\\mathsf{M_0}",
+        "sourceLatex": "\\CloneM_0",
+        "description": "All monotone 0-reproducing Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\CloneM\\cap\\CloneR_0",
+          "latex": "\\mathsf{M}\\cap\\mathsf{R}_0",
+          "plain": "M ∩ R_0"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, x\\land y, \\false}",
+            "latex": "\\{x\\lor y, x\\land y, \\bot\\}",
+            "plain": "{x∨y, x∧y, ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, x\\land y, \\false}",
+          "latex": "\\{x\\lor y, x\\land y, \\bot\\}",
+          "plain": "{x∨y, x∧y, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "monotone",
+          "0-reproducing"
+        ],
+        "group": "Monotone Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 1.0,
+          "y": 19.0
+        }
+      }
+    },
+    {
+      "id": "M2",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 288.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "M2",
+        "labelLatex": "\\mathsf{M_2}",
+        "sourceLatex": "\\CloneM_2",
+        "description": "All monotone Boolean functions that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM\\cap\\CloneR_2",
+          "latex": "\\mathsf{M}\\cap\\mathsf{R}_2",
+          "plain": "M ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, x\\land y}",
+            "latex": "\\{x\\lor y, x\\land y\\}",
+            "plain": "{x∨y, x∧y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, x\\land y}",
+          "latex": "\\{x\\lor y, x\\land y\\}",
+          "plain": "{x∨y, x∧y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            }
+          ]
+        },
+        "properties": [
+          "monotone",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "Monotone Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 18.0
+        }
+      }
+    },
+    {
+      "id": "S21",
+      "type": "latticeNode",
+      "position": {
+        "x": 834.72,
+        "y": 297.76
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S21",
+        "labelLatex": "\\mathsf{S_{1}^2}",
+        "sourceLatex": "\\CloneS_{1}^2",
+        "description": "All 1-separating Boolean functions of degree 2.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating of degree } 2}",
+          "latex": "\\{f \\mid f \\text{ is 1-separating of degree 2}\\}",
+          "plain": "{f | f is 1-separating of degree 2}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\nimp y,T^{3}_2}",
+            "latex": "\\{x\\nrightarrow y,T^{3}_{2}\\}",
+            "plain": "{x↛y, T_2^3}",
+            "elements": [
+              {
+                "sourceLatex": "x\\nimp y",
+                "latex": "x\\nrightarrow y",
+                "plain": "x↛y"
+              },
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\nimp y,T^{3}_2}",
+          "latex": "\\{x\\nrightarrow y,T^{3}_{2}\\}",
+          "plain": "{x↛y, T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-2"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "1"
+        },
+        "group": "1-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 6.7,
+          "y": 17.8
+        }
+      }
+    },
+    {
+      "id": "S31",
+      "type": "latticeNode",
+      "position": {
+        "x": 834.72,
+        "y": 364.96
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S31",
+        "labelLatex": "\\mathsf{S_{1}^3}",
+        "sourceLatex": "\\CloneS_{1}^3",
+        "description": "All 1-separating Boolean functions of degree 3.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating of degree } 3}",
+          "latex": "\\{f \\mid f \\text{ is 1-separating of degree 3}\\}",
+          "plain": "{f | f is 1-separating of degree 3}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\nimp y,T^{4}_3}",
+            "latex": "\\{x\\nrightarrow y,T^{4}_{3}\\}",
+            "plain": "{x↛y, T_3^4}",
+            "elements": [
+              {
+                "sourceLatex": "x\\nimp y",
+                "latex": "x\\nrightarrow y",
+                "plain": "x↛y"
+              },
+              {
+                "sourceLatex": "T^{4}_3",
+                "latex": "T^{4}_{3}",
+                "plain": "T_3^4"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\nimp y,T^{4}_3}",
+          "latex": "\\{x\\nrightarrow y,T^{4}_{3}\\}",
+          "plain": "{x↛y, T_3^4}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            },
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-3"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "1"
+        },
+        "group": "1-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 6.7,
+          "y": 16.3
+        }
+      }
+    },
+    {
+      "id": "S1",
+      "type": "latticeNode",
+      "position": {
+        "x": 834.72,
+        "y": 476.96
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S1",
+        "labelLatex": "\\mathsf{S_{1}}",
+        "sourceLatex": "\\CloneS_{1}",
+        "description": "All 1-separating Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating}}",
+          "latex": "\\{f \\mid f \\text{ is 1-separating}\\}",
+          "plain": "{f | f is 1-separating}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\nimp y}",
+            "latex": "\\{x\\nrightarrow y\\}",
+            "plain": "{x↛y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\nimp y",
+                "latex": "x\\nrightarrow y",
+                "plain": "x↛y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\nimp y}",
+          "latex": "\\{x\\nrightarrow y\\}",
+          "plain": "{x↛y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "1"
+        },
+        "group": "1-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 6.7,
+          "y": 13.8
+        }
+      }
+    },
+    {
+      "id": "S212",
+      "type": "latticeNode",
+      "position": {
+        "x": 780.0,
+        "y": 356.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S212",
+        "labelLatex": "\\mathsf{S_{12}^2}",
+        "sourceLatex": "\\CloneS_{12}^2",
+        "description": "All 1-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^2\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{1}^{2}\\cap\\mathsf{R}_2",
+          "plain": "S_1^2 ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\aimp(x,y,z),T^{3}_2}",
+            "latex": "\\{\\operatorname{aimp}(x,y,z),T^{3}_{2}\\}",
+            "plain": "{aimp(x,y,z), T_2^3}",
+            "elements": [
+              {
+                "sourceLatex": "\\aimp(x,y,z)",
+                "latex": "\\operatorname{aimp}(x,y,z)",
+                "plain": "aimp(x,y,z)"
+              },
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\aimp(x,y,z),T^{3}_2}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z),T^{3}_{2}\\}",
+          "plain": "{aimp(x,y,z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-2",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "12"
+        },
+        "group": "1-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 5.8,
+          "y": 16.5
+        }
+      }
+    },
+    {
+      "id": "S312",
+      "type": "latticeNode",
+      "position": {
+        "x": 780.0,
+        "y": 423.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S312",
+        "labelLatex": "\\mathsf{S_{12}^3}",
+        "sourceLatex": "\\CloneS_{12}^3",
+        "description": "All 1-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^3\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{1}^{3}\\cap\\mathsf{R}_2",
+          "plain": "S_1^3 ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\aimp(x,y,z),T^{4}_3}",
+            "latex": "\\{\\operatorname{aimp}(x,y,z),T^{4}_{3}\\}",
+            "plain": "{aimp(x,y,z), T_3^4}",
+            "elements": [
+              {
+                "sourceLatex": "\\aimp(x,y,z)",
+                "latex": "\\operatorname{aimp}(x,y,z)",
+                "plain": "aimp(x,y,z)"
+              },
+              {
+                "sourceLatex": "T^{4}_3",
+                "latex": "T^{4}_{3}",
+                "plain": "T_3^4"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\aimp(x,y,z),T^{4}_3}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z),T^{4}_{3}\\}",
+          "plain": "{aimp(x,y,z), T_3^4}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            },
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-3",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "12"
+        },
+        "group": "1-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 5.8,
+          "y": 15.0
+        }
+      }
+    },
+    {
+      "id": "S12",
+      "type": "latticeNode",
+      "position": {
+        "x": 780.0,
+        "y": 535.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S12",
+        "labelLatex": "\\mathsf{S_{12}}",
+        "sourceLatex": "\\CloneS_{12}",
+        "description": "All 1-separating Boolean functions that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{1}\\cap\\mathsf{R}_2",
+          "plain": "S_1 ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\aimp(x,y,z)}",
+            "latex": "\\{\\operatorname{aimp}(x,y,z)\\}",
+            "plain": "{aimp(x,y,z)}",
+            "elements": [
+              {
+                "sourceLatex": "\\aimp(x,y,z)",
+                "latex": "\\operatorname{aimp}(x,y,z)",
+                "plain": "aimp(x,y,z)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\aimp(x,y,z)}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z)\\}",
+          "plain": "{aimp(x,y,z)}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "12"
+        },
+        "group": "1-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 5.8,
+          "y": 12.5
+        }
+      }
+    },
+    {
+      "id": "S211",
+      "type": "latticeNode",
+      "position": {
+        "x": 719.2,
+        "y": 356.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S211",
+        "labelLatex": "\\mathsf{S_{11}^2}",
+        "sourceLatex": "\\CloneS_{11}^2",
+        "description": "All 1-separating Boolean functions of degree 2 that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}^{2}\\cap\\mathsf{M}",
+          "plain": "S_1^2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{3}_2,\\false}",
+            "latex": "\\{T^{3}_{2},\\bot\\}",
+            "plain": "{T_2^3, ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{3}_2,\\false}",
+          "latex": "\\{T^{3}_{2},\\bot\\}",
+          "plain": "{T_2^3, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-2",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "11"
+        },
+        "group": "1-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 4.8,
+          "y": 16.5
+        }
+      }
+    },
+    {
+      "id": "S311",
+      "type": "latticeNode",
+      "position": {
+        "x": 719.2,
+        "y": 423.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S311",
+        "labelLatex": "\\mathsf{S_{11}^3}",
+        "sourceLatex": "\\CloneS_{11}^3",
+        "description": "All 1-separating Boolean functions of degree 3 that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^3\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}^{3}\\cap\\mathsf{M}",
+          "plain": "S_1^3 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{4}_3,\\false}",
+            "latex": "\\{T^{4}_{3},\\bot\\}",
+            "plain": "{T_3^4, ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "T^{4}_3",
+                "latex": "T^{4}_{3}",
+                "plain": "T_3^4"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{4}_3,\\false}",
+          "latex": "\\{T^{4}_{3},\\bot\\}",
+          "plain": "{T_3^4, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-3",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "11"
+        },
+        "group": "1-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 4.8,
+          "y": 15.0
+        }
+      }
+    },
+    {
+      "id": "S11",
+      "type": "latticeNode",
+      "position": {
+        "x": 719.2,
+        "y": 535.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S11",
+        "labelLatex": "\\mathsf{S_{11}}",
+        "sourceLatex": "\\CloneS_{11}",
+        "description": "All 1-separating Boolean functions that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}\\cap\\mathsf{M}",
+          "plain": "S_1 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land(y\\lor z),\\false}",
+            "latex": "\\{x\\land(y\\lor z),\\bot\\}",
+            "plain": "{x∧(y∨z), ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land(y\\lor z)",
+                "latex": "x\\land(y\\lor z)",
+                "plain": "x∧(y∨z)"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land(y\\lor z),\\false}",
+          "latex": "\\{x\\land(y\\lor z),\\bot\\}",
+          "plain": "{x∧(y∨z), ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land(y\\lor z)",
+              "latex": "x\\land(y\\lor z)",
+              "plain": "x∧(y∨z)"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "11"
+        },
+        "group": "1-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 4.8,
+          "y": 12.5
+        }
+      }
+    },
+    {
+      "id": "S210",
+      "type": "latticeNode",
+      "position": {
+        "x": 664.48,
+        "y": 414.24
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S210",
+        "labelLatex": "\\mathsf{S_{10}^2}",
+        "sourceLatex": "\\CloneS_{10}^2",
+        "description": "All 1-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^2\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}^{2}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_1^2 ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land(y\\lor z),T^{3}_2}",
+            "latex": "\\{x\\land(y\\lor z),T^{3}_{2}\\}",
+            "plain": "{x∧(y∨z), T_2^3}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land(y\\lor z)",
+                "latex": "x\\land(y\\lor z)",
+                "plain": "x∧(y∨z)"
+              },
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land(y\\lor z),T^{3}_2}",
+          "latex": "\\{x\\land(y\\lor z),T^{3}_{2}\\}",
+          "plain": "{x∧(y∨z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land(y\\lor z)",
+              "latex": "x\\land(y\\lor z)",
+              "plain": "x∧(y∨z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-2",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "10"
+        },
+        "group": "1-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 3.9,
+          "y": 15.2
+        }
+      }
+    },
+    {
+      "id": "S310",
+      "type": "latticeNode",
+      "position": {
+        "x": 664.48,
+        "y": 481.44
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S310",
+        "labelLatex": "\\mathsf{S_{10}^3}",
+        "sourceLatex": "\\CloneS_{10}^3",
+        "description": "All 1-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^3\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}^{3}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_1^3 ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{4}_3}",
+            "latex": "\\{T^{4}_{3}\\}",
+            "plain": "{T_3^4}",
+            "elements": [
+              {
+                "sourceLatex": "T^{4}_3",
+                "latex": "T^{4}_{3}",
+                "plain": "T_3^4"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{4}_3}",
+          "latex": "\\{T^{4}_{3}\\}",
+          "plain": "{T_3^4}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_3",
+              "latex": "T^{4}_{3}",
+              "plain": "T_3^4"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-3",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "10"
+        },
+        "group": "1-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 3.9,
+          "y": 13.7
+        }
+      }
+    },
+    {
+      "id": "S10",
+      "type": "latticeNode",
+      "position": {
+        "x": 664.48,
+        "y": 593.44
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S10",
+        "labelLatex": "\\mathsf{S_{10}}",
+        "sourceLatex": "\\CloneS_{10}",
+        "description": "All 1-separating Boolean functions that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_1 ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land(y\\lor z)}",
+            "latex": "\\{x\\land(y\\lor z)\\}",
+            "plain": "{x∧(y∨z)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land(y\\lor z)",
+                "latex": "x\\land(y\\lor z)",
+                "plain": "x∧(y∨z)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land(y\\lor z)}",
+          "latex": "\\{x\\land(y\\lor z)\\}",
+          "plain": "{x∧(y∨z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land(y\\lor z)",
+              "latex": "x\\land(y\\lor z)",
+              "plain": "x∧(y∨z)"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "10"
+        },
+        "group": "1-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 3.9,
+          "y": 11.2
+        }
+      }
+    },
+    {
+      "id": "S20",
+      "type": "latticeNode",
+      "position": {
+        "x": 20.0,
+        "y": 297.76
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S20",
+        "labelLatex": "\\mathsf{S_{0}^2}",
+        "sourceLatex": "\\CloneS_{0}^2",
+        "description": "All 0-separating Boolean functions of degree 2.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating of degree } 2}",
+          "latex": "\\{f \\mid f \\text{ is 0-separating of degree 2}\\}",
+          "plain": "{f | f is 0-separating of degree 2}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\limp y,T^{3}_2}",
+            "latex": "\\{x\\to y,T^{3}_{2}\\}",
+            "plain": "{x→y, T_2^3}",
+            "elements": [
+              {
+                "sourceLatex": "x\\limp y",
+                "latex": "x\\to y",
+                "plain": "x→y"
+              },
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\limp y,T^{3}_2}",
+          "latex": "\\{x\\to y,T^{3}_{2}\\}",
+          "plain": "{x→y, T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-2"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "0"
+        },
+        "group": "0-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -6.7,
+          "y": 17.8
+        }
+      }
+    },
+    {
+      "id": "S30",
+      "type": "latticeNode",
+      "position": {
+        "x": 20.0,
+        "y": 364.96
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S30",
+        "labelLatex": "\\mathsf{S_{0}^3}",
+        "sourceLatex": "\\CloneS_{0}^3",
+        "description": "All 0-separating Boolean functions of degree 3.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating of degree } 3}",
+          "latex": "\\{f \\mid f \\text{ is 0-separating of degree 3}\\}",
+          "plain": "{f | f is 0-separating of degree 3}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\limp y,T^{4}_2}",
+            "latex": "\\{x\\to y,T^{4}_{2}\\}",
+            "plain": "{x→y, T_2^4}",
+            "elements": [
+              {
+                "sourceLatex": "x\\limp y",
+                "latex": "x\\to y",
+                "plain": "x→y"
+              },
+              {
+                "sourceLatex": "T^{4}_2",
+                "latex": "T^{4}_{2}",
+                "plain": "T_2^4"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\limp y,T^{4}_2}",
+          "latex": "\\{x\\to y,T^{4}_{2}\\}",
+          "plain": "{x→y, T_2^4}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            },
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-3"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "0"
+        },
+        "group": "0-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -6.7,
+          "y": 16.3
+        }
+      }
+    },
+    {
+      "id": "S0",
+      "type": "latticeNode",
+      "position": {
+        "x": 20.0,
+        "y": 476.96
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S0",
+        "labelLatex": "\\mathsf{S_{0}}",
+        "sourceLatex": "\\CloneS_{0}",
+        "description": "All 0-separating Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating}}",
+          "latex": "\\{f \\mid f \\text{ is 0-separating}\\}",
+          "plain": "{f | f is 0-separating}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\limp y}",
+            "latex": "\\{x\\to y\\}",
+            "plain": "{x→y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\limp y",
+                "latex": "x\\to y",
+                "plain": "x→y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\limp y}",
+          "latex": "\\{x\\to y\\}",
+          "plain": "{x→y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "0"
+        },
+        "group": "0-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -6.7,
+          "y": 13.8
+        }
+      }
+    },
+    {
+      "id": "S202",
+      "type": "latticeNode",
+      "position": {
+        "x": 74.72,
+        "y": 356.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S202",
+        "labelLatex": "\\mathsf{S_{02}^2}",
+        "sourceLatex": "\\CloneS_{02}^2",
+        "description": "All 0-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^2\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{0}^{2}\\cap\\mathsf{R}_2",
+          "plain": "S_0^2 ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{3}_2}",
+            "latex": "\\{x\\lor(y\\nrightarrow z),T^{3}_{2}\\}",
+            "plain": "{x∨(y↛z), T_2^3}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\nimp z)",
+                "latex": "x\\lor(y\\nrightarrow z)",
+                "plain": "x∨(y↛z)"
+              },
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{3}_2}",
+          "latex": "\\{x\\lor(y\\nrightarrow z),T^{3}_{2}\\}",
+          "plain": "{x∨(y↛z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-2",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "02"
+        },
+        "group": "0-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -5.8,
+          "y": 16.5
+        }
+      }
+    },
+    {
+      "id": "S302",
+      "type": "latticeNode",
+      "position": {
+        "x": 74.72,
+        "y": 423.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S302",
+        "labelLatex": "\\mathsf{S_{02}^3}",
+        "sourceLatex": "\\CloneS_{02}^3",
+        "description": "All 0-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^3\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{0}^{3}\\cap\\mathsf{R}_2",
+          "plain": "S_0^3 ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{4}_2}",
+            "latex": "\\{x\\lor(y\\nrightarrow z),T^{4}_{2}\\}",
+            "plain": "{x∨(y↛z), T_2^4}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\nimp z)",
+                "latex": "x\\lor(y\\nrightarrow z)",
+                "plain": "x∨(y↛z)"
+              },
+              {
+                "sourceLatex": "T^{4}_2",
+                "latex": "T^{4}_{2}",
+                "plain": "T_2^4"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{4}_2}",
+          "latex": "\\{x\\lor(y\\nrightarrow z),T^{4}_{2}\\}",
+          "plain": "{x∨(y↛z), T_2^4}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            },
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-3",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "02"
+        },
+        "group": "0-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -5.8,
+          "y": 15.0
+        }
+      }
+    },
+    {
+      "id": "S02",
+      "type": "latticeNode",
+      "position": {
+        "x": 74.72,
+        "y": 535.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S02",
+        "labelLatex": "\\mathsf{S_{02}}",
+        "sourceLatex": "\\CloneS_{02}",
+        "description": "All 0-separating Boolean functions that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{0}\\cap\\mathsf{R}_2",
+          "plain": "S_0 ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\nimp z)}",
+            "latex": "\\{x\\lor(y\\nrightarrow z)\\}",
+            "plain": "{x∨(y↛z)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\nimp z)",
+                "latex": "x\\lor(y\\nrightarrow z)",
+                "plain": "x∨(y↛z)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z)}",
+          "latex": "\\{x\\lor(y\\nrightarrow z)\\}",
+          "plain": "{x∨(y↛z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "02"
+        },
+        "group": "0-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -5.8,
+          "y": 12.5
+        }
+      }
+    },
+    {
+      "id": "S201",
+      "type": "latticeNode",
+      "position": {
+        "x": 135.52,
+        "y": 356.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S201",
+        "labelLatex": "\\mathsf{S_{01}^2}",
+        "sourceLatex": "\\CloneS_{01}^2",
+        "description": "All 0-separating Boolean functions of degree 2 that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}^{2}\\cap\\mathsf{M}",
+          "plain": "S_0^2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{3}_2,\\true}",
+            "latex": "\\{T^{3}_{2},\\top\\}",
+            "plain": "{T_2^3, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{3}_2,\\true}",
+          "latex": "\\{T^{3}_{2},\\top\\}",
+          "plain": "{T_2^3, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-2",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "01"
+        },
+        "group": "0-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -4.8,
+          "y": 16.5
+        }
+      }
+    },
+    {
+      "id": "S301",
+      "type": "latticeNode",
+      "position": {
+        "x": 135.52,
+        "y": 423.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S301",
+        "labelLatex": "\\mathsf{S_{01}^3}",
+        "sourceLatex": "\\CloneS_{01}^3",
+        "description": "All 0-separating Boolean functions of degree 3 that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^3\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}^{3}\\cap\\mathsf{M}",
+          "plain": "S_0^3 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{4}_2,\\true}",
+            "latex": "\\{T^{4}_{2},\\top\\}",
+            "plain": "{T_2^4, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "T^{4}_2",
+                "latex": "T^{4}_{2}",
+                "plain": "T_2^4"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{4}_2,\\true}",
+          "latex": "\\{T^{4}_{2},\\top\\}",
+          "plain": "{T_2^4, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-3",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "01"
+        },
+        "group": "0-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -4.8,
+          "y": 15.0
+        }
+      }
+    },
+    {
+      "id": "S01",
+      "type": "latticeNode",
+      "position": {
+        "x": 135.52,
+        "y": 535.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S01",
+        "labelLatex": "\\mathsf{S_{01}}",
+        "sourceLatex": "\\CloneS_{01}",
+        "description": "All 0-separating Boolean functions that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}\\cap\\mathsf{M}",
+          "plain": "S_0 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\land z),\\true}",
+            "latex": "\\{x\\lor(y\\land z),\\top\\}",
+            "plain": "{x∨(y∧z), ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\land z)",
+                "latex": "x\\lor(y\\land z)",
+                "plain": "x∨(y∧z)"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\land z),\\true}",
+          "latex": "\\{x\\lor(y\\land z),\\top\\}",
+          "plain": "{x∨(y∧z), ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\land z)",
+              "latex": "x\\lor(y\\land z)",
+              "plain": "x∨(y∧z)"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "01"
+        },
+        "group": "0-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -4.8,
+          "y": 12.5
+        }
+      }
+    },
+    {
+      "id": "S200",
+      "type": "latticeNode",
+      "position": {
+        "x": 190.24,
+        "y": 414.24
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S200",
+        "labelLatex": "\\mathsf{S_{00}^2}",
+        "sourceLatex": "\\CloneS_{00}^2",
+        "description": "All 0-separating Boolean functions of degree 2 that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^2\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}^{2}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_0^2 ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\land z),T^{3}_2}",
+            "latex": "\\{x\\lor(y\\land z),T^{3}_{2}\\}",
+            "plain": "{x∨(y∧z), T_2^3}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\land z)",
+                "latex": "x\\lor(y\\land z)",
+                "plain": "x∨(y∧z)"
+              },
+              {
+                "sourceLatex": "T^{3}_2",
+                "latex": "T^{3}_{2}",
+                "plain": "T_2^3"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\land z),T^{3}_2}",
+          "latex": "\\{x\\lor(y\\land z),T^{3}_{2}\\}",
+          "plain": "{x∨(y∧z), T_2^3}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\land z)",
+              "latex": "x\\lor(y\\land z)",
+              "plain": "x∨(y∧z)"
+            },
+            {
+              "sourceLatex": "T^{3}_2",
+              "latex": "T^{3}_{2}",
+              "plain": "T_2^3"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-2",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 2,
+          "degreeKind": "finite",
+          "familySubscript": "00"
+        },
+        "group": "0-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -3.9,
+          "y": 15.2
+        }
+      }
+    },
+    {
+      "id": "S300",
+      "type": "latticeNode",
+      "position": {
+        "x": 190.24,
+        "y": 481.44
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S300",
+        "labelLatex": "\\mathsf{S_{00}^3}",
+        "sourceLatex": "\\CloneS_{00}^3",
+        "description": "All 0-separating Boolean functions of degree 3 that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^3\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}^{3}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_0^3 ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{4}_2}",
+            "latex": "\\{T^{4}_{2}\\}",
+            "plain": "{T_2^4}",
+            "elements": [
+              {
+                "sourceLatex": "T^{4}_2",
+                "latex": "T^{4}_{2}",
+                "plain": "T_2^4"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{4}_2}",
+          "latex": "\\{T^{4}_{2}\\}",
+          "plain": "{T_2^4}",
+          "elements": [
+            {
+              "sourceLatex": "T^{4}_2",
+              "latex": "T^{4}_{2}",
+              "plain": "T_2^4"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-3",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": 3,
+          "degreeKind": "finite",
+          "familySubscript": "00"
+        },
+        "group": "0-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -3.9,
+          "y": 13.7
+        }
+      }
+    },
+    {
+      "id": "S00",
+      "type": "latticeNode",
+      "position": {
+        "x": 190.24,
+        "y": 593.44
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S00",
+        "labelLatex": "\\mathsf{S_{00}}",
+        "sourceLatex": "\\CloneS_{00}",
+        "description": "All 0-separating Boolean functions that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_0 ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\land z)}",
+            "latex": "\\{x\\lor(y\\land z)\\}",
+            "plain": "{x∨(y∧z)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\land z)",
+                "latex": "x\\lor(y\\land z)",
+                "plain": "x∨(y∧z)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\land z)}",
+          "latex": "\\{x\\lor(y\\land z)\\}",
+          "plain": "{x∨(y∧z)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\land z)",
+              "latex": "x\\lor(y\\land z)",
+              "plain": "x∨(y∧z)"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": null,
+          "degreeKind": "unbounded",
+          "familySubscript": "00"
+        },
+        "group": "0-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -3.9,
+          "y": 11.2
+        }
+      }
+    },
+    {
+      "id": "D",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 468.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "D",
+        "labelLatex": "\\mathsf{D}",
+        "sourceLatex": "\\CloneD",
+        "description": "All self-dual Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is self-dual}}",
+          "latex": "\\{f\\mid f\\text{ is self-dual}\\}",
+          "plain": "{f | f is self-dual}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\maj(x, \\overline y, \\overline z)}",
+            "latex": "\\{\\operatorname{maj}(x,\\overline y,\\overline z)\\}",
+            "plain": "{maj(x,ȳ,z̄)}",
+            "elements": [
+              {
+                "sourceLatex": "\\maj(x, \\overline y, \\overline z)",
+                "latex": "\\operatorname{maj}(x,\\overline y,\\overline z)",
+                "plain": "maj(x,ȳ,z̄)"
+              }
+            ]
+          },
+          {
+            "sourceLatex": "\\set{\\maj,\\lnot}",
+            "latex": "\\{\\operatorname{maj},\\neg\\}",
+            "plain": "{maj, ¬}",
+            "elements": [
+              {
+                "sourceLatex": "\\maj",
+                "latex": "\\operatorname{maj}",
+                "plain": "maj"
+              },
+              {
+                "sourceLatex": "\\lnot",
+                "latex": "\\neg",
+                "plain": "¬"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\maj(x, \\overline y, \\overline z)}",
+          "latex": "\\{\\operatorname{maj}(x,\\overline y,\\overline z)\\}",
+          "plain": "{maj(x,ȳ,z̄)}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj(x, \\overline y, \\overline z)",
+              "latex": "\\operatorname{maj}(x,\\overline y,\\overline z)",
+              "plain": "maj(x,ȳ,z̄)"
+            }
+          ]
+        },
+        "properties": [
+          "self-dual"
+        ],
+        "group": "Selfdual Functions",
+        "emphasized": true,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 14.0
+        }
+      }
+    },
+    {
+      "id": "D1",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 512.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "D1",
+        "labelLatex": "\\mathsf{D_1}",
+        "sourceLatex": "\\CloneD_1",
+        "description": "All self-dual Boolean functions that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneD\\cap\\CloneR_2",
+          "latex": "\\mathsf{D}\\cap\\mathsf{R}_2",
+          "plain": "D ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\maj(x, y, \\overline z)}",
+            "latex": "\\{\\operatorname{maj}(x,y,\\overline z)\\}",
+            "plain": "{maj(x,y,z̄)}",
+            "elements": [
+              {
+                "sourceLatex": "\\maj(x, y, \\overline z)",
+                "latex": "\\operatorname{maj}(x,y,\\overline z)",
+                "plain": "maj(x,y,z̄)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\maj(x, y, \\overline z)}",
+          "latex": "\\{\\operatorname{maj}(x,y,\\overline z)\\}",
+          "plain": "{maj(x,y,z̄)}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj(x, y, \\overline z)",
+              "latex": "\\operatorname{maj}(x,y,\\overline z)",
+              "plain": "maj(x,y,z̄)"
+            }
+          ]
+        },
+        "properties": [
+          "self-dual",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "Selfdual Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 13.0
+        }
+      }
+    },
+    {
+      "id": "D2",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 557.6
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "D2",
+        "labelLatex": "\\mathsf{D_2}",
+        "sourceLatex": "\\CloneD_2",
+        "description": "All monotone self-dual Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\CloneD\\cap\\CloneM",
+          "latex": "\\mathsf{D}\\cap\\mathsf{M}",
+          "plain": "D ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\maj(x, y, z)}",
+            "latex": "\\{\\operatorname{maj}(x,y,z)\\}",
+            "plain": "{maj(x,y,z)}",
+            "elements": [
+              {
+                "sourceLatex": "\\maj(x, y, z)",
+                "latex": "\\operatorname{maj}(x,y,z)",
+                "plain": "maj(x,y,z)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\maj(x, y, z)}",
+          "latex": "\\{\\operatorname{maj}(x,y,z)\\}",
+          "plain": "{maj(x,y,z)}",
+          "elements": [
+            {
+              "sourceLatex": "\\maj(x, y, z)",
+              "latex": "\\operatorname{maj}(x,y,z)",
+              "plain": "maj(x,y,z)"
+            }
+          ]
+        },
+        "properties": [
+          "self-dual",
+          "monotone"
+        ],
+        "group": "Selfdual Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 12.0
+        }
+      }
+    },
+    {
+      "id": "E",
+      "type": "latticeNode",
+      "position": {
+        "x": 609.76,
+        "y": 647.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "E",
+        "labelLatex": "\\mathsf{E}",
+        "sourceLatex": "\\CloneE",
+        "description": "All Boolean functions that are a conjunction or a constant.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is a conjunction or constant}}",
+          "latex": "\\{f\\mid f\\text{ is a conjunction or constant}\\}",
+          "plain": "{f | f is a conjunction or constant}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land y, \\false, \\true}",
+            "latex": "\\{x\\land y,\\bot,\\top\\}",
+            "plain": "{x∧y, ⊥, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land y, \\false, \\true}",
+          "latex": "\\{x\\land y,\\bot,\\top\\}",
+          "plain": "{x∧y, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "conjunctive"
+        ],
+        "group": "Conjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 3.0,
+          "y": 10.0
+        }
+      }
+    },
+    {
+      "id": "E1",
+      "type": "latticeNode",
+      "position": {
+        "x": 548.96,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "E1",
+        "labelLatex": "\\mathsf{E_1}",
+        "sourceLatex": "\\CloneE_1",
+        "description": "The conjunctive clone that is monotone and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM_1\\cap\\CloneE",
+          "latex": "\\mathsf{M}_1\\cap\\mathsf{E}",
+          "plain": "M_1 ∩ E"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land y, \\true}",
+            "latex": "\\{x\\land y,\\top\\}",
+            "plain": "{x∧y, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land y, \\true}",
+          "latex": "\\{x\\land y,\\top\\}",
+          "plain": "{x∧y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "conjunctive",
+          "monotone",
+          "1-reproducing"
+        ],
+        "group": "Conjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 2.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "E0",
+      "type": "latticeNode",
+      "position": {
+        "x": 670.56,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "E0",
+        "labelLatex": "\\mathsf{E_0}",
+        "sourceLatex": "\\CloneE_0",
+        "description": "The conjunctive clone that is monotone and 0-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM_0\\cap\\CloneE",
+          "latex": "\\mathsf{M}_0\\cap\\mathsf{E}",
+          "plain": "M_0 ∩ E"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land y, \\false}",
+            "latex": "\\{x\\land y,\\bot\\}",
+            "plain": "{x∧y, ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land y, \\false}",
+          "latex": "\\{x\\land y,\\bot\\}",
+          "plain": "{x∧y, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "conjunctive",
+          "monotone",
+          "0-reproducing"
+        ],
+        "group": "Conjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 4.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "E2",
+      "type": "latticeNode",
+      "position": {
+        "x": 609.76,
+        "y": 736.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "E2",
+        "labelLatex": "\\mathsf{E_2}",
+        "sourceLatex": "\\CloneE_2",
+        "description": "The conjunctive clone that is monotone, 0-reproducing, and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM_2\\cap\\CloneE",
+          "latex": "\\mathsf{M}_2\\cap\\mathsf{E}",
+          "plain": "M_2 ∩ E"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\land y}",
+            "latex": "\\{x\\land y\\}",
+            "plain": "{x∧y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\land y",
+                "latex": "x\\land y",
+                "plain": "x∧y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\land y}",
+          "latex": "\\{x\\land y\\}",
+          "plain": "{x∧y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\land y",
+              "latex": "x\\land y",
+              "plain": "x∧y"
+            }
+          ]
+        },
+        "properties": [
+          "conjunctive",
+          "monotone",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "Conjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 3.0,
+          "y": 8.0
+        }
+      }
+    },
+    {
+      "id": "V",
+      "type": "latticeNode",
+      "position": {
+        "x": 244.96,
+        "y": 647.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "V",
+        "labelLatex": "\\mathsf{V}",
+        "sourceLatex": "\\CloneV",
+        "description": "All Boolean functions that are a disjunction or a constant.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is a disjunction or constant}}",
+          "latex": "\\{f\\mid f\\text{ is a disjunction or constant}\\}",
+          "plain": "{f | f is a disjunction or constant}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, \\false,\\true}",
+            "latex": "\\{x\\lor y,\\bot,\\top\\}",
+            "plain": "{x∨y, ⊥, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, \\false,\\true}",
+          "latex": "\\{x\\lor y,\\bot,\\top\\}",
+          "plain": "{x∨y, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "disjunctive"
+        ],
+        "group": "Disjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -3.0,
+          "y": 10.0
+        }
+      }
+    },
+    {
+      "id": "V0",
+      "type": "latticeNode",
+      "position": {
+        "x": 305.76,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "V0",
+        "labelLatex": "\\mathsf{V_0}",
+        "sourceLatex": "\\CloneV_0",
+        "description": "The disjunctive clone that is monotone and 0-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM_0\\cap\\CloneV",
+          "latex": "\\mathsf{M}_0\\cap\\mathsf{V}",
+          "plain": "M_0 ∩ V"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, \\false}",
+            "latex": "\\{x\\lor y,\\bot\\}",
+            "plain": "{x∨y, ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, \\false}",
+          "latex": "\\{x\\lor y,\\bot\\}",
+          "plain": "{x∨y, ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "disjunctive",
+          "monotone",
+          "0-reproducing"
+        ],
+        "group": "Disjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -2.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "V1",
+      "type": "latticeNode",
+      "position": {
+        "x": 184.16,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "V1",
+        "labelLatex": "\\mathsf{V_1}",
+        "sourceLatex": "\\CloneV_1",
+        "description": "The disjunctive clone that is monotone and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM_1\\cap\\CloneV",
+          "latex": "\\mathsf{M}_1\\cap\\mathsf{V}",
+          "plain": "M_1 ∩ V"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y, \\true}",
+            "latex": "\\{x\\lor y,\\top\\}",
+            "plain": "{x∨y, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y, \\true}",
+          "latex": "\\{x\\lor y,\\top\\}",
+          "plain": "{x∨y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "disjunctive",
+          "monotone",
+          "1-reproducing"
+        ],
+        "group": "Disjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -4.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "V2",
+      "type": "latticeNode",
+      "position": {
+        "x": 244.96,
+        "y": 736.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "V2",
+        "labelLatex": "\\mathsf{V_2}",
+        "sourceLatex": "\\CloneV_2",
+        "description": "The disjunctive clone that is monotone, 0-reproducing, and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneM_2\\cap\\CloneV",
+          "latex": "\\mathsf{M}_2\\cap\\mathsf{V}",
+          "plain": "M_2 ∩ V"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor y}",
+            "latex": "\\{x\\lor y\\}",
+            "plain": "{x∨y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor y",
+                "latex": "x\\lor y",
+                "plain": "x∨y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor y}",
+          "latex": "\\{x\\lor y\\}",
+          "plain": "{x∨y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor y",
+              "latex": "x\\lor y",
+              "plain": "x∨y"
+            }
+          ]
+        },
+        "properties": [
+          "disjunctive",
+          "monotone",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "Disjunctions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -3.0,
+          "y": 8.0
+        }
+      }
+    },
+    {
+      "id": "L",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 647.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "L",
+        "labelLatex": "\\mathsf{L}",
+        "sourceLatex": "\\CloneL",
+        "description": "All linear Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is linear}}",
+          "latex": "\\{f\\mid f\\text{ is linear}\\}",
+          "plain": "{f | f is linear}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x \\xor y,\\true}",
+            "latex": "\\{x\\oplus y,\\top\\}",
+            "plain": "{x⊕y, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x \\xor y",
+                "latex": "x\\oplus y",
+                "plain": "x⊕y"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x \\xor y,\\true}",
+          "latex": "\\{x\\oplus y,\\top\\}",
+          "plain": "{x⊕y, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x \\xor y",
+              "latex": "x\\oplus y",
+              "plain": "x⊕y"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "linear"
+        ],
+        "group": "Affine Functions",
+        "emphasized": true,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 10.0
+        }
+      }
+    },
+    {
+      "id": "L0",
+      "type": "latticeNode",
+      "position": {
+        "x": 488.16,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "L0",
+        "labelLatex": "\\mathsf{L_0}",
+        "sourceLatex": "\\CloneL_0",
+        "description": "All linear 0-reproducing Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\CloneL\\cap\\CloneR_0",
+          "latex": "\\mathsf{L}\\cap\\mathsf{R}_0",
+          "plain": "L ∩ R_0"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\xor y}",
+            "latex": "\\{x\\oplus y\\}",
+            "plain": "{x⊕y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\xor y",
+                "latex": "x\\oplus y",
+                "plain": "x⊕y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\xor y}",
+          "latex": "\\{x\\oplus y\\}",
+          "plain": "{x⊕y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\xor y",
+              "latex": "x\\oplus y",
+              "plain": "x⊕y"
+            }
+          ]
+        },
+        "properties": [
+          "linear",
+          "0-reproducing"
+        ],
+        "group": "Affine Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 1.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "L1",
+      "type": "latticeNode",
+      "position": {
+        "x": 366.56,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "L1",
+        "labelLatex": "\\mathsf{L_1}",
+        "sourceLatex": "\\CloneL_1",
+        "description": "All linear 1-reproducing Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\CloneL\\cap\\CloneR_1",
+          "latex": "\\mathsf{L}\\cap\\mathsf{R}_1",
+          "plain": "L ∩ R_1"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\eq y}",
+            "latex": "\\{x\\leftrightarrow y\\}",
+            "plain": "{x↔y}",
+            "elements": [
+              {
+                "sourceLatex": "x\\eq y",
+                "latex": "x\\leftrightarrow y",
+                "plain": "x↔y"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\eq y}",
+          "latex": "\\{x\\leftrightarrow y\\}",
+          "plain": "{x↔y}",
+          "elements": [
+            {
+              "sourceLatex": "x\\eq y",
+              "latex": "x\\leftrightarrow y",
+              "plain": "x↔y"
+            }
+          ]
+        },
+        "properties": [
+          "linear",
+          "1-reproducing"
+        ],
+        "group": "Affine Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -1.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "L3",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 692.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "L3",
+        "labelLatex": "\\mathsf{L_3}",
+        "sourceLatex": "\\CloneL_3",
+        "description": "All self-dual linear Boolean functions.",
+        "definition": {
+          "sourceLatex": "\\CloneL\\cap\\CloneD",
+          "latex": "\\mathsf{L}\\cap\\mathsf{D}",
+          "plain": "L ∩ D"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\xor y\\xor z\\xor \\true}",
+            "latex": "\\{x\\oplus y\\oplus z\\oplus\\top\\}",
+            "plain": "{x⊕y⊕z⊕⊤}",
+            "elements": [
+              {
+                "sourceLatex": "x\\xor y\\xor z\\xor \\true",
+                "latex": "x\\oplus y\\oplus z\\oplus\\top",
+                "plain": "x⊕y⊕z⊕⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\xor y\\xor z\\xor \\true}",
+          "latex": "\\{x\\oplus y\\oplus z\\oplus\\top\\}",
+          "plain": "{x⊕y⊕z⊕⊤}",
+          "elements": [
+            {
+              "sourceLatex": "x\\xor y\\xor z\\xor \\true",
+              "latex": "x\\oplus y\\oplus z\\oplus\\top",
+              "plain": "x⊕y⊕z⊕⊤"
+            }
+          ]
+        },
+        "properties": [
+          "linear",
+          "self-dual"
+        ],
+        "group": "Affine Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 9.0
+        }
+      }
+    },
+    {
+      "id": "L2",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 736.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "L2",
+        "labelLatex": "\\mathsf{L_2}",
+        "sourceLatex": "\\CloneL_2",
+        "description": "All linear Boolean functions that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneL\\cap\\CloneR_2",
+          "latex": "\\mathsf{L}\\cap\\mathsf{R}_2",
+          "plain": "L ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\threeXor(x,y,z)}",
+            "latex": "\\{x\\oplus y\\oplus z\\}",
+            "plain": "{x⊕y⊕z}",
+            "elements": [
+              {
+                "sourceLatex": "\\threeXor(x,y,z)",
+                "latex": "x\\oplus y\\oplus z",
+                "plain": "x⊕y⊕z"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\threeXor(x,y,z)}",
+          "latex": "\\{x\\oplus y\\oplus z\\}",
+          "plain": "{x⊕y⊕z}",
+          "elements": [
+            {
+              "sourceLatex": "\\threeXor(x,y,z)",
+              "latex": "x\\oplus y\\oplus z",
+              "plain": "x⊕y⊕z"
+            }
+          ]
+        },
+        "properties": [
+          "linear",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "Affine Functions",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 8.0
+        }
+      }
+    },
+    {
+      "id": "N",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 804.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "N",
+        "labelLatex": "\\mathsf{N}",
+        "sourceLatex": "\\CloneN",
+        "description": "All Boolean functions that depend on at most one variable.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ depends on at most one variable}}",
+          "latex": "\\{f\\mid f\\text{ depends on at most one variable}\\}",
+          "plain": "{f | f depends on at most one variable}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\neg x,\\false,\\true}",
+            "latex": "\\{\\neg x,\\bot,\\top\\}",
+            "plain": "{¬x, ⊥, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "\\neg x",
+                "latex": "\\neg x",
+                "plain": "¬x"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\neg x,\\false,\\true}",
+          "latex": "\\{\\neg x,\\bot,\\top\\}",
+          "plain": "{¬x, ⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "\\neg x",
+              "latex": "\\neg x",
+              "plain": "¬x"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "essentially-unary"
+        ],
+        "group": "Negations",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 6.5
+        }
+      }
+    },
+    {
+      "id": "N2",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 848.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "N2",
+        "labelLatex": "\\mathsf{N_2}",
+        "sourceLatex": "\\CloneN_2",
+        "description": "The essentially unary self-dual clone.",
+        "definition": {
+          "sourceLatex": "\\CloneL_3\\cap\\CloneN",
+          "latex": "\\mathsf{L}_3\\cap\\mathsf{N}",
+          "plain": "L_3 ∩ N"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\neg x}",
+            "latex": "\\{\\neg x\\}",
+            "plain": "{¬x}",
+            "elements": [
+              {
+                "sourceLatex": "\\neg x",
+                "latex": "\\neg x",
+                "plain": "¬x"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\neg x}",
+          "latex": "\\{\\neg x\\}",
+          "plain": "{¬x}",
+          "elements": [
+            {
+              "sourceLatex": "\\neg x",
+              "latex": "\\neg x",
+              "plain": "¬x"
+            }
+          ]
+        },
+        "properties": [
+          "essentially-unary",
+          "self-dual"
+        ],
+        "group": "Negations",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 5.5
+        }
+      }
+    },
+    {
+      "id": "I",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 983.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "I",
+        "labelLatex": "\\mathsf{I}",
+        "sourceLatex": "\\CloneI",
+        "description": "All Boolean functions that are a projection or a constant.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is a projection or a constant}}",
+          "latex": "\\{f\\mid f\\text{ is a projection or a constant}\\}",
+          "plain": "{f | f is a projection or a constant}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\false,\\true}",
+            "latex": "\\{\\bot,\\top\\}",
+            "plain": "{⊥, ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\false,\\true}",
+          "latex": "\\{\\bot,\\top\\}",
+          "plain": "{⊥, ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "projections-and-constants"
+        ],
+        "group": "Identities",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 2.5
+        }
+      }
+    },
+    {
+      "id": "I0",
+      "type": "latticeNode",
+      "position": {
+        "x": 488.16,
+        "y": 1028.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "I0",
+        "labelLatex": "\\mathsf{I_0}",
+        "sourceLatex": "\\CloneI_0",
+        "description": "All projections together with the constant-false function.",
+        "definition": {
+          "sourceLatex": "\\CloneR_0\\cap\\CloneI",
+          "latex": "\\mathsf{R}_0\\cap\\mathsf{I}",
+          "plain": "R_0 ∩ I"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\false}",
+            "latex": "\\{\\bot\\}",
+            "plain": "{⊥}",
+            "elements": [
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\false}",
+          "latex": "\\{\\bot\\}",
+          "plain": "{⊥}",
+          "elements": [
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "projections",
+          "0-reproducing"
+        ],
+        "group": "Identities",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 1.0,
+          "y": 1.5
+        }
+      }
+    },
+    {
+      "id": "I1",
+      "type": "latticeNode",
+      "position": {
+        "x": 366.56,
+        "y": 1028.0
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "I1",
+        "labelLatex": "\\mathsf{I_1}",
+        "sourceLatex": "\\CloneI_1",
+        "description": "All projections together with the constant-true function.",
+        "definition": {
+          "sourceLatex": "\\CloneR_1\\cap\\CloneI",
+          "latex": "\\mathsf{R}_1\\cap\\mathsf{I}",
+          "plain": "R_1 ∩ I"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\true}",
+            "latex": "\\{\\top\\}",
+            "plain": "{⊤}",
+            "elements": [
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\true}",
+          "latex": "\\{\\top\\}",
+          "plain": "{⊤}",
+          "elements": [
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "projections",
+          "1-reproducing"
+        ],
+        "group": "Identities",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -1.0,
+          "y": 1.5
+        }
+      }
+    },
+    {
+      "id": "I2",
+      "type": "latticeNode",
+      "position": {
+        "x": 427.36,
+        "y": 1072.8
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "I2",
+        "labelLatex": "\\mathsf{I_2}",
+        "sourceLatex": "\\CloneI_2",
+        "description": "All projections, without constants.",
+        "definition": {
+          "sourceLatex": "\\CloneR_2\\cap\\CloneI",
+          "latex": "\\mathsf{R}_2\\cap\\mathsf{I}",
+          "plain": "R_2 ∩ I"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{}",
+            "latex": "\\varnothing",
+            "plain": "∅",
+            "elements": []
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{}",
+          "latex": "\\varnothing",
+          "plain": "∅",
+          "elements": []
+        },
+        "properties": [
+          "projections",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "group": "Identities",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 0.0,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "id": "Sn0",
+      "type": "latticeNode",
+      "position": {
+        "x": 20.0,
+        "y": 420.96
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₀ⁿ",
+        "labelLatex": "\\mathsf{S}_{0}^{n}",
+        "sourceLatex": "\\CloneS_0^n",
+        "description": "All 0-separating Boolean functions of degree n.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\false-separating of degree } n}",
+          "latex": "\\{f \\mid f \\text{ is 0-separating of degree n}\\}",
+          "plain": "{f | f is 0-separating of degree n}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\limp y,T^{n+1}_2}",
+            "latex": "\\{x\\to y,T^{n+1}_{2}\\}",
+            "plain": "{x→y, T_2^(n+1)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\limp y",
+                "latex": "x\\to y",
+                "plain": "x→y"
+              },
+              {
+                "sourceLatex": "T^{n+1}_2",
+                "latex": "T^{n+1}_{2}",
+                "plain": "T_2^(n+1)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\limp y,T^{n+1}_2}",
+          "latex": "\\{x\\to y,T^{n+1}_{2}\\}",
+          "plain": "{x→y, T_2^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\limp y",
+              "latex": "x\\to y",
+              "plain": "x→y"
+            },
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-symbolic"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "0"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "0-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -6.7,
+          "y": 15.05
+        }
+      }
+    },
+    {
+      "id": "Sn02",
+      "type": "latticeNode",
+      "position": {
+        "x": 74.72,
+        "y": 479.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₀₂ⁿ",
+        "labelLatex": "\\mathsf{S}_{02}^{n}",
+        "sourceLatex": "\\CloneS_{02}^n",
+        "description": "All 0-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^n\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{0}^{n}\\cap\\mathsf{R}_2",
+          "plain": "S_0^n ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{n+1}_2}",
+            "latex": "\\{x\\lor(y\\nrightarrow z),T^{n+1}_{2}\\}",
+            "plain": "{x∨(y↛z), T_2^(n+1)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\lor(y\\nimp z)",
+                "latex": "x\\lor(y\\nrightarrow z)",
+                "plain": "x∨(y↛z)"
+              },
+              {
+                "sourceLatex": "T^{n+1}_2",
+                "latex": "T^{n+1}_{2}",
+                "plain": "T_2^(n+1)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\lor(y\\nimp z),T^{n+1}_2}",
+          "latex": "\\{x\\lor(y\\nrightarrow z),T^{n+1}_{2}\\}",
+          "plain": "{x∨(y↛z), T_2^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\lor(y\\nimp z)",
+              "latex": "x\\lor(y\\nrightarrow z)",
+              "plain": "x∨(y↛z)"
+            },
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-symbolic",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "02"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "0-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -5.8,
+          "y": 13.75
+        }
+      }
+    },
+    {
+      "id": "Sn01",
+      "type": "latticeNode",
+      "position": {
+        "x": 135.52,
+        "y": 479.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₀₁ⁿ",
+        "labelLatex": "\\mathsf{S}_{01}^{n}",
+        "sourceLatex": "\\CloneS_{01}^n",
+        "description": "All 0-separating Boolean functions of degree n that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^n\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}^{n}\\cap\\mathsf{M}",
+          "plain": "S_0^n ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{n+1}_2,\\true}",
+            "latex": "\\{T^{n+1}_{2},\\top\\}",
+            "plain": "{T_2^(n+1), ⊤}",
+            "elements": [
+              {
+                "sourceLatex": "T^{n+1}_2",
+                "latex": "T^{n+1}_{2}",
+                "plain": "T_2^(n+1)"
+              },
+              {
+                "sourceLatex": "\\true",
+                "latex": "\\top",
+                "plain": "⊤"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{n+1}_2,\\true}",
+          "latex": "\\{T^{n+1}_{2},\\top\\}",
+          "plain": "{T_2^(n+1), ⊤}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            },
+            {
+              "sourceLatex": "\\true",
+              "latex": "\\top",
+              "plain": "⊤"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-symbolic",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "01"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "0-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -4.8,
+          "y": 13.75
+        }
+      }
+    },
+    {
+      "id": "Sn00",
+      "type": "latticeNode",
+      "position": {
+        "x": 190.24,
+        "y": 537.44
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₀₀ⁿ",
+        "labelLatex": "\\mathsf{S}_{00}^{n}",
+        "sourceLatex": "\\CloneS_{00}^n",
+        "description": "All 0-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_0^n\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{0}^{n}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_0^n ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{n+1}_2}",
+            "latex": "\\{T^{n+1}_{2}\\}",
+            "plain": "{T_2^(n+1)}",
+            "elements": [
+              {
+                "sourceLatex": "T^{n+1}_2",
+                "latex": "T^{n+1}_{2}",
+                "plain": "T_2^(n+1)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{n+1}_2}",
+          "latex": "\\{T^{n+1}_{2}\\}",
+          "plain": "{T_2^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_2",
+              "latex": "T^{n+1}_{2}",
+              "plain": "T_2^(n+1)"
+            }
+          ]
+        },
+        "properties": [
+          "0-separating-degree-symbolic",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 0,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "00"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "0-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": -3.9,
+          "y": 12.45
+        }
+      }
+    },
+    {
+      "id": "Sn10",
+      "type": "latticeNode",
+      "position": {
+        "x": 664.48,
+        "y": 537.44
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₁₀ⁿ",
+        "labelLatex": "\\mathsf{S}_{10}^{n}",
+        "sourceLatex": "\\CloneS_{10}^n",
+        "description": "All 1-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing and monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^n\\cap\\CloneR_2\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}^{n}\\cap\\mathsf{R}_2\\cap\\mathsf{M}",
+          "plain": "S_1^n ∩ R_2 ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{n+1}_n}",
+            "latex": "\\{T^{n+1}_{n}\\}",
+            "plain": "{T_n^(n+1)}",
+            "elements": [
+              {
+                "sourceLatex": "T^{n+1}_n",
+                "latex": "T^{n+1}_{n}",
+                "plain": "T_n^(n+1)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{n+1}_n}",
+          "latex": "\\{T^{n+1}_{n}\\}",
+          "plain": "{T_n^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-symbolic",
+          "0-reproducing",
+          "1-reproducing",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "10"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "1-separating 4",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 3.9,
+          "y": 12.45
+        }
+      }
+    },
+    {
+      "id": "Sn11",
+      "type": "latticeNode",
+      "position": {
+        "x": 719.2,
+        "y": 479.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₁₁ⁿ",
+        "labelLatex": "\\mathsf{S}_{11}^{n}",
+        "sourceLatex": "\\CloneS_{11}^n",
+        "description": "All 1-separating Boolean functions of degree n that are monotone.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^n\\cap\\CloneM",
+          "latex": "\\mathsf{S}_{1}^{n}\\cap\\mathsf{M}",
+          "plain": "S_1^n ∩ M"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{T^{n+1}_n,\\false}",
+            "latex": "\\{T^{n+1}_{n},\\bot\\}",
+            "plain": "{T_n^(n+1), ⊥}",
+            "elements": [
+              {
+                "sourceLatex": "T^{n+1}_n",
+                "latex": "T^{n+1}_{n}",
+                "plain": "T_n^(n+1)"
+              },
+              {
+                "sourceLatex": "\\false",
+                "latex": "\\bot",
+                "plain": "⊥"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{T^{n+1}_n,\\false}",
+          "latex": "\\{T^{n+1}_{n},\\bot\\}",
+          "plain": "{T_n^(n+1), ⊥}",
+          "elements": [
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            },
+            {
+              "sourceLatex": "\\false",
+              "latex": "\\bot",
+              "plain": "⊥"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-symbolic",
+          "monotone"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "11"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "1-separating 3",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 4.8,
+          "y": 13.75
+        }
+      }
+    },
+    {
+      "id": "Sn12",
+      "type": "latticeNode",
+      "position": {
+        "x": 780.0,
+        "y": 479.2
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₁₂ⁿ",
+        "labelLatex": "\\mathsf{S}_{12}^{n}",
+        "sourceLatex": "\\CloneS_{12}^n",
+        "description": "All 1-separating Boolean functions of degree n that are both 0-reproducing and 1-reproducing.",
+        "definition": {
+          "sourceLatex": "\\CloneS_1^n\\cap\\CloneR_2",
+          "latex": "\\mathsf{S}_{1}^{n}\\cap\\mathsf{R}_2",
+          "plain": "S_1^n ∩ R_2"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{\\aimp(x,y,z),T^{n+1}_n}",
+            "latex": "\\{\\operatorname{aimp}(x,y,z),T^{n+1}_{n}\\}",
+            "plain": "{aimp(x,y,z), T_n^(n+1)}",
+            "elements": [
+              {
+                "sourceLatex": "\\aimp(x,y,z)",
+                "latex": "\\operatorname{aimp}(x,y,z)",
+                "plain": "aimp(x,y,z)"
+              },
+              {
+                "sourceLatex": "T^{n+1}_n",
+                "latex": "T^{n+1}_{n}",
+                "plain": "T_n^(n+1)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{\\aimp(x,y,z),T^{n+1}_n}",
+          "latex": "\\{\\operatorname{aimp}(x,y,z),T^{n+1}_{n}\\}",
+          "plain": "{aimp(x,y,z), T_n^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "\\aimp(x,y,z)",
+              "latex": "\\operatorname{aimp}(x,y,z)",
+              "plain": "aimp(x,y,z)"
+            },
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-symbolic",
+          "0-reproducing",
+          "1-reproducing"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "12"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "1-separating 2",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 5.8,
+          "y": 13.75
+        }
+      }
+    },
+    {
+      "id": "Sn1",
+      "type": "latticeNode",
+      "position": {
+        "x": 834.72,
+        "y": 420.96
+      },
+      "draggable": false,
+      "selectable": true,
+      "width": 40.0,
+      "height": 40.0,
+      "data": {
+        "label": "S₁ⁿ",
+        "labelLatex": "\\mathsf{S}_{1}^{n}",
+        "sourceLatex": "\\CloneS_1^n",
+        "description": "All 1-separating Boolean functions of degree n.",
+        "definition": {
+          "sourceLatex": "\\set{f \\mid f \\text{ is \\true-separating of degree } n}",
+          "latex": "\\{f \\mid f \\text{ is 1-separating of degree n}\\}",
+          "plain": "{f | f is 1-separating of degree n}"
+        },
+        "bases": [
+          {
+            "sourceLatex": "\\set{x\\nimp y,T^{n+1}_n}",
+            "latex": "\\{x\\nrightarrow y,T^{n+1}_{n}\\}",
+            "plain": "{x↛y, T_n^(n+1)}",
+            "elements": [
+              {
+                "sourceLatex": "x\\nimp y",
+                "latex": "x\\nrightarrow y",
+                "plain": "x↛y"
+              },
+              {
+                "sourceLatex": "T^{n+1}_n",
+                "latex": "T^{n+1}_{n}",
+                "plain": "T_n^(n+1)"
+              }
+            ]
+          }
+        ],
+        "basis": {
+          "sourceLatex": "\\set{x\\nimp y,T^{n+1}_n}",
+          "latex": "\\{x\\nrightarrow y,T^{n+1}_{n}\\}",
+          "plain": "{x↛y, T_n^(n+1)}",
+          "elements": [
+            {
+              "sourceLatex": "x\\nimp y",
+              "latex": "x\\nrightarrow y",
+              "plain": "x↛y"
+            },
+            {
+              "sourceLatex": "T^{n+1}_n",
+              "latex": "T^{n+1}_{n}",
+              "plain": "T_n^(n+1)"
+            }
+          ]
+        },
+        "properties": [
+          "1-separating-degree-symbolic"
+        ],
+        "separating": {
+          "value": 1,
+          "degree": "n",
+          "degreeKind": "symbolic",
+          "familySubscript": "1"
+        },
+        "parameterConstraint": "n ≥ 4",
+        "displayRole": "generic-family-layer",
+        "group": "1-separating 1",
+        "emphasized": false,
+        "sourcePosition": {
+          "x": 6.7,
+          "y": 15.05
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1:R2->R1",
+      "source": "R2",
+      "target": "R1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e2:R2->R0",
+      "source": "R2",
+      "target": "R0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e3:R1->BF",
+      "source": "R1",
+      "target": "BF",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e4:R0->BF",
+      "source": "R0",
+      "target": "BF",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e5:M2->M1",
+      "source": "M2",
+      "target": "M1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e6:M2->R2",
+      "source": "M2",
+      "target": "R2",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 120,
+          "in": 240,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e7:M2->M0",
+      "source": "M2",
+      "target": "M0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e8:M1->R1",
+      "source": "M1",
+      "target": "R1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e9:M1->M",
+      "source": "M1",
+      "target": "M",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e10:M0->R0",
+      "source": "M0",
+      "target": "R0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e11:M0->M",
+      "source": "M0",
+      "target": "M",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e12:M->BF",
+      "source": "M",
+      "target": "BF",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 50,
+          "in": 306,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e14:S31->S21",
+      "source": "S31",
+      "target": "S21",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e15:S21->R0",
+      "source": "S21",
+      "target": "R0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e16:S12->S1",
+      "source": "S12",
+      "target": "S1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e18:S312->S31",
+      "source": "S312",
+      "target": "S31",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e19:S312->S212",
+      "source": "S312",
+      "target": "S212",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e20:S212->S21",
+      "source": "S212",
+      "target": "S21",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e21:S212->R2",
+      "source": "S212",
+      "target": "R2",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e22:S11->S1",
+      "source": "S11",
+      "target": "S1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e24:S311->S31",
+      "source": "S311",
+      "target": "S31",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e25:S311->S211",
+      "source": "S311",
+      "target": "S211",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e26:S211->S21",
+      "source": "S211",
+      "target": "S21",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e27:S211->M0",
+      "source": "S211",
+      "target": "M0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e28:S10->S12",
+      "source": "S10",
+      "target": "S12",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e29:S10->S11",
+      "source": "S10",
+      "target": "S11",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e31:S310->S312",
+      "source": "S310",
+      "target": "S312",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e32:S310->S311",
+      "source": "S310",
+      "target": "S311",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e33:S310->S210",
+      "source": "S310",
+      "target": "S210",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e34:S210->S212",
+      "source": "S210",
+      "target": "S212",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e35:S210->S211",
+      "source": "S210",
+      "target": "S211",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e36:S210->M2",
+      "source": "S210",
+      "target": "M2",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e38:S30->S20",
+      "source": "S30",
+      "target": "S20",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e39:S20->R1",
+      "source": "S20",
+      "target": "R1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e40:S02->S0",
+      "source": "S02",
+      "target": "S0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e42:S302->S30",
+      "source": "S302",
+      "target": "S30",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e43:S302->S202",
+      "source": "S302",
+      "target": "S202",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e44:S202->S20",
+      "source": "S202",
+      "target": "S20",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e45:S202->R2",
+      "source": "S202",
+      "target": "R2",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e46:S01->S0",
+      "source": "S01",
+      "target": "S0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e48:S301->S30",
+      "source": "S301",
+      "target": "S30",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e49:S301->S201",
+      "source": "S301",
+      "target": "S201",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e50:S201->S20",
+      "source": "S201",
+      "target": "S20",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e51:S201->M1",
+      "source": "S201",
+      "target": "M1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e52:S00->S02",
+      "source": "S00",
+      "target": "S02",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e53:S00->S01",
+      "source": "S00",
+      "target": "S01",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e55:S300->S302",
+      "source": "S300",
+      "target": "S302",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e56:S300->S301",
+      "source": "S300",
+      "target": "S301",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e57:S300->S200",
+      "source": "S300",
+      "target": "S200",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e58:S200->S202",
+      "source": "S200",
+      "target": "S202",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e59:S200->S201",
+      "source": "S200",
+      "target": "S201",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e60:S200->M2",
+      "source": "S200",
+      "target": "M2",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e61:D2->S200",
+      "source": "D2",
+      "target": "S200",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e62:D2->S210",
+      "source": "D2",
+      "target": "S210",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e63:D2->D1",
+      "source": "D2",
+      "target": "D1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e64:D1->R2",
+      "source": "D1",
+      "target": "R2",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 135,
+          "in": 220,
+          "looseness": 0.95
+        }
+      }
+    },
+    {
+      "id": "e65:D1->D",
+      "source": "D1",
+      "target": "D",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e66:D->BF",
+      "source": "D",
+      "target": "BF",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 41,
+          "in": 306,
+          "looseness": 0.85
+        }
+      }
+    },
+    {
+      "id": "e67:L2->L1",
+      "source": "L2",
+      "target": "L1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e68:L2->L3",
+      "source": "L2",
+      "target": "L3",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e69:L2->L0",
+      "source": "L2",
+      "target": "L0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e70:L2->D1",
+      "source": "L2",
+      "target": "D1",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 50,
+          "in": 310,
+          "looseness": 0.6
+        }
+      }
+    },
+    {
+      "id": "e71:L1->R1",
+      "source": "L1",
+      "target": "R1",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 110,
+          "in": 250,
+          "looseness": 0.9
+        }
+      }
+    },
+    {
+      "id": "e72:L1->L",
+      "source": "L1",
+      "target": "L",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e73:L3->L",
+      "source": "L3",
+      "target": "L",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e74:L3->D",
+      "source": "L3",
+      "target": "D",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 130,
+          "in": 230,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e75:L0->L",
+      "source": "L0",
+      "target": "L",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e76:L0->R0",
+      "source": "L0",
+      "target": "R0",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 70,
+          "in": 290,
+          "looseness": 0.9
+        }
+      }
+    },
+    {
+      "id": "e77:L->BF",
+      "source": "L",
+      "target": "BF",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 55,
+          "in": 306,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e78:E2->E1",
+      "source": "E2",
+      "target": "E1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e79:E2->S10",
+      "source": "E2",
+      "target": "S10",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e80:E2->E0",
+      "source": "E2",
+      "target": "E0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e81:E1->M1",
+      "source": "E1",
+      "target": "M1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e82:E1->E",
+      "source": "E1",
+      "target": "E",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e83:E0->E",
+      "source": "E0",
+      "target": "E",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e84:E0->S11",
+      "source": "E0",
+      "target": "S11",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e85:E->M",
+      "source": "E",
+      "target": "M",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e86:V2->V1",
+      "source": "V2",
+      "target": "V1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e87:V2->S00",
+      "source": "V2",
+      "target": "S00",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e88:V2->V0",
+      "source": "V2",
+      "target": "V0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e89:V1->S01",
+      "source": "V1",
+      "target": "S01",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e90:V1->V",
+      "source": "V1",
+      "target": "V",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e91:V0->V",
+      "source": "V0",
+      "target": "V",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e92:V0->M0",
+      "source": "V0",
+      "target": "M0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e93:V->M",
+      "source": "V",
+      "target": "M",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e94:N2->N",
+      "source": "N2",
+      "target": "N",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e95:N2->L3",
+      "source": "N2",
+      "target": "L3",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 50,
+          "in": 310,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e96:N->L",
+      "source": "N",
+      "target": "L",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 125,
+          "in": 230,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e97:I2->I1",
+      "source": "I2",
+      "target": "I1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e98:I2->I0",
+      "source": "I2",
+      "target": "I0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e99:I2->E2",
+      "source": "I2",
+      "target": "E2",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e100:I2->V2",
+      "source": "I2",
+      "target": "V2",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e101:I2->N2",
+      "source": "I2",
+      "target": "N2",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 115,
+          "in": 240,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e102:I2->L2",
+      "source": "I2",
+      "target": "L2",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 115,
+          "in": 240,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e103:I2->D2",
+      "source": "I2",
+      "target": "D2",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 70,
+          "in": 290,
+          "looseness": 0.7
+        }
+      }
+    },
+    {
+      "id": "e104:I1->V1",
+      "source": "I1",
+      "target": "V1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e105:I1->L1",
+      "source": "I1",
+      "target": "L1",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 110,
+          "in": 250,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e106:I1->E1",
+      "source": "I1",
+      "target": "E1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e107:I1->I",
+      "source": "I1",
+      "target": "I",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e108:I0->I",
+      "source": "I0",
+      "target": "I",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e109:I0->L0",
+      "source": "I0",
+      "target": "L0",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 70,
+          "in": 290,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e110:I0->V0",
+      "source": "I0",
+      "target": "V0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e111:I0->E0",
+      "source": "I0",
+      "target": "E0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e112:I->V",
+      "source": "I",
+      "target": "V",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e113:I->N",
+      "source": "I",
+      "target": "N",
+      "type": "bezier",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": {
+          "out": 62,
+          "in": 312,
+          "looseness": 0.8
+        }
+      }
+    },
+    {
+      "id": "e114:I->E",
+      "source": "I",
+      "target": "E",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e115:S0->Sn0",
+      "source": "S0",
+      "target": "Sn0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e116:Sn0->S30",
+      "source": "Sn0",
+      "target": "S30",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e117:S02->Sn02",
+      "source": "S02",
+      "target": "Sn02",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e118:Sn02->S302",
+      "source": "Sn02",
+      "target": "S302",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e119:S01->Sn01",
+      "source": "S01",
+      "target": "Sn01",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e120:Sn01->S301",
+      "source": "Sn01",
+      "target": "S301",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e121:S00->Sn00",
+      "source": "S00",
+      "target": "Sn00",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e122:Sn00->S300",
+      "source": "Sn00",
+      "target": "S300",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e123:S10->Sn10",
+      "source": "S10",
+      "target": "Sn10",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e124:Sn10->S310",
+      "source": "Sn10",
+      "target": "S310",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e125:S11->Sn11",
+      "source": "S11",
+      "target": "Sn11",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e126:Sn11->S311",
+      "source": "Sn11",
+      "target": "S311",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e127:S12->Sn12",
+      "source": "S12",
+      "target": "Sn12",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e128:Sn12->S312",
+      "source": "Sn12",
+      "target": "S312",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e129:S1->Sn1",
+      "source": "S1",
+      "target": "Sn1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e130:Sn1->S31",
+      "source": "Sn1",
+      "target": "S31",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {
+        "strokeDasharray": "6 4"
+      },
+      "data": {
+        "direction": "upward",
+        "semanticKind": "displayed-gap",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e131:Sn02->Sn0",
+      "source": "Sn02",
+      "target": "Sn0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e132:Sn01->Sn0",
+      "source": "Sn01",
+      "target": "Sn0",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e133:Sn00->Sn02",
+      "source": "Sn00",
+      "target": "Sn02",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e134:Sn00->Sn01",
+      "source": "Sn00",
+      "target": "Sn01",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e135:Sn12->Sn1",
+      "source": "Sn12",
+      "target": "Sn1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e136:Sn11->Sn1",
+      "source": "Sn11",
+      "target": "Sn1",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e137:Sn10->Sn12",
+      "source": "Sn10",
+      "target": "Sn12",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    },
+    {
+      "id": "e138:Sn10->Sn11",
+      "source": "Sn10",
+      "target": "Sn11",
+      "type": "straight",
+      "animated": false,
+      "selectable": false,
+      "style": {},
+      "data": {
+        "direction": "upward",
+        "semanticKind": "cover",
+        "tikzRouting": null
+      }
+    }
+  ]
+}

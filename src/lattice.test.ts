@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import latticeData from '../source material/posts-lattice.json'
+import rawLatticeData from './data/posts-lattice.json'
 import {
   downwardClosure,
   maximalElementsOutsideClosure,
@@ -7,6 +7,13 @@ import {
   upwardClosure,
   type DirectedEdge,
 } from './lattice'
+
+type GraphFixtureData = {
+  nodes: Array<{ id: string }>
+  edges: DirectedEdge[]
+}
+
+const latticeData: GraphFixtureData = rawLatticeData
 
 const diamondEdges: DirectedEdge[] = [
   { source: 'bottom', target: 'left' },

@@ -16,7 +16,7 @@ import {
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 import { useMemo, useState, type ReactNode } from 'react'
-import latticeData from '../source material/posts-lattice.reactflow.json'
+import rawLatticeData from './data/posts-lattice.reactflow.json'
 import {
   downwardClosure,
   maximalElementsOutsideClosure,
@@ -28,6 +28,12 @@ import {
   wikipediaCloneNamesById,
   type WikipediaCloneName,
 } from './wikipediaCloneNames'
+import {
+  type LatticeJsonData,
+  type LatticeJsonNode,
+  type Point,
+  type TikzRouting,
+} from './latticeDataTypes'
 import './App.css'
 
 type SelectionMode = 'upward' | 'downward'
@@ -57,16 +63,7 @@ type LatticeEdgeData = {
   tikzRouting?: TikzRouting
 }
 
-type TikzRouting = {
-  out?: number
-  in?: number
-  looseness?: number
-}
-
-type Point = {
-  x: number
-  y: number
-}
+const latticeData = rawLatticeData as LatticeJsonData
 
 const nodeDiameter = 48
 const nodeRadius = nodeDiameter / 2
@@ -366,7 +363,7 @@ function App() {
 function CloneInfoBox({
   node,
 }: {
-  node: (typeof latticeData.nodes)[number] | undefined
+  node: LatticeJsonNode | undefined
 }) {
   if (node === undefined) {
     return null
@@ -587,7 +584,7 @@ function stretchedPosition(position: Point): Point {
   }
 }
 
-function layoutPosition(node: (typeof latticeData.nodes)[number]): Point {
+function layoutPosition(node: LatticeJsonNode): Point {
   const position = stretchedPosition(node.position)
 
   return {
