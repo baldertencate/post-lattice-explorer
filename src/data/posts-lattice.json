@@ -783,7 +783,7 @@
     },
     {
       "id": "S21",
-      "group": "1-separating 1",
+      "group": "1-separating",
       "sourcePosition": {
         "x": 6.7,
         "y": 17.8
@@ -860,7 +860,7 @@
     },
     {
       "id": "S31",
-      "group": "1-separating 1",
+      "group": "1-separating",
       "sourcePosition": {
         "x": 6.7,
         "y": 16.3
@@ -937,7 +937,7 @@
     },
     {
       "id": "S1",
-      "group": "1-separating 1",
+      "group": "1-separating",
       "sourcePosition": {
         "x": 6.7,
         "y": 13.8
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "S212",
-      "group": "1-separating 2",
+      "group": "1-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": 5.8,
         "y": 16.5
@@ -1083,7 +1083,7 @@
     },
     {
       "id": "S312",
-      "group": "1-separating 2",
+      "group": "1-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": 5.8,
         "y": 15.0
@@ -1162,7 +1162,7 @@
     },
     {
       "id": "S12",
-      "group": "1-separating 2",
+      "group": "1-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": 5.8,
         "y": 12.5
@@ -1231,7 +1231,7 @@
     },
     {
       "id": "S211",
-      "group": "1-separating 3",
+      "group": "1-separating, monotone",
       "sourcePosition": {
         "x": 4.8,
         "y": 16.5
@@ -1309,7 +1309,7 @@
     },
     {
       "id": "S311",
-      "group": "1-separating 3",
+      "group": "1-separating, monotone",
       "sourcePosition": {
         "x": 4.8,
         "y": 15.0
@@ -1387,7 +1387,7 @@
     },
     {
       "id": "S11",
-      "group": "1-separating 3",
+      "group": "1-separating, monotone",
       "sourcePosition": {
         "x": 4.8,
         "y": 12.5
@@ -1465,7 +1465,7 @@
     },
     {
       "id": "S210",
-      "group": "1-separating 4",
+      "group": "1-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": 3.9,
         "y": 15.2
@@ -1545,7 +1545,7 @@
     },
     {
       "id": "S310",
-      "group": "1-separating 4",
+      "group": "1-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": 3.9,
         "y": 13.7
@@ -1615,7 +1615,7 @@
     },
     {
       "id": "S10",
-      "group": "1-separating 4",
+      "group": "1-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": 3.9,
         "y": 11.2
@@ -1685,7 +1685,7 @@
     },
     {
       "id": "S20",
-      "group": "0-separating 1",
+      "group": "0-separating",
       "sourcePosition": {
         "x": -6.7,
         "y": 17.8
@@ -1762,7 +1762,7 @@
     },
     {
       "id": "S30",
-      "group": "0-separating 1",
+      "group": "0-separating",
       "sourcePosition": {
         "x": -6.7,
         "y": 16.3
@@ -1839,7 +1839,7 @@
     },
     {
       "id": "S0",
-      "group": "0-separating 1",
+      "group": "0-separating",
       "sourcePosition": {
         "x": -6.7,
         "y": 13.8
@@ -1906,7 +1906,7 @@
     },
     {
       "id": "S202",
-      "group": "0-separating 2",
+      "group": "0-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": -5.8,
         "y": 16.5
@@ -1985,7 +1985,7 @@
     },
     {
       "id": "S302",
-      "group": "0-separating 2",
+      "group": "0-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": -5.8,
         "y": 15.0
@@ -2064,7 +2064,7 @@
     },
     {
       "id": "S02",
-      "group": "0-separating 2",
+      "group": "0-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": -5.8,
         "y": 12.5
@@ -2133,7 +2133,7 @@
     },
     {
       "id": "S201",
-      "group": "0-separating 3",
+      "group": "0-separating, monotone",
       "sourcePosition": {
         "x": -4.8,
         "y": 16.5
@@ -2211,7 +2211,7 @@
     },
     {
       "id": "S301",
-      "group": "0-separating 3",
+      "group": "0-separating, monotone",
       "sourcePosition": {
         "x": -4.8,
         "y": 15.0
@@ -2289,7 +2289,7 @@
     },
     {
       "id": "S01",
-      "group": "0-separating 3",
+      "group": "0-separating, monotone",
       "sourcePosition": {
         "x": -4.8,
         "y": 12.5
@@ -2367,7 +2367,7 @@
     },
     {
       "id": "S200",
-      "group": "0-separating 4",
+      "group": "0-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": -3.9,
         "y": 15.2
@@ -2447,7 +2447,7 @@
     },
     {
       "id": "S300",
-      "group": "0-separating 4",
+      "group": "0-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": -3.9,
         "y": 13.7
@@ -2517,7 +2517,7 @@
     },
     {
       "id": "S00",
-      "group": "0-separating 4",
+      "group": "0-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": -3.9,
         "y": 11.2
@@ -4083,7 +4083,7 @@
     },
     {
       "id": "Sn0",
-      "group": "0-separating 1",
+      "group": "0-separating",
       "sourcePosition": {
         "x": -6.7,
         "y": 15.05
@@ -4142,7 +4142,7 @@
         ]
       },
       "properties": [
-        "0-separating-degree-symbolic"
+        "0-separating-degree-n"
       ],
       "separating": {
         "value": 0,
@@ -4163,7 +4163,7 @@
     },
     {
       "id": "Sn02",
-      "group": "0-separating 2",
+      "group": "0-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": -5.8,
         "y": 13.75
@@ -4222,7 +4222,7 @@
         ]
       },
       "properties": [
-        "0-separating-degree-symbolic",
+        "0-separating-degree-n",
         "0-reproducing",
         "1-reproducing"
       ],
@@ -4245,7 +4245,7 @@
     },
     {
       "id": "Sn01",
-      "group": "0-separating 3",
+      "group": "0-separating, monotone",
       "sourcePosition": {
         "x": -4.8,
         "y": 13.75
@@ -4304,7 +4304,7 @@
         ]
       },
       "properties": [
-        "0-separating-degree-symbolic",
+        "0-separating-degree-n",
         "monotone"
       ],
       "separating": {
@@ -4326,7 +4326,7 @@
     },
     {
       "id": "Sn00",
-      "group": "0-separating 4",
+      "group": "0-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": -3.9,
         "y": 12.45
@@ -4375,7 +4375,7 @@
         ]
       },
       "properties": [
-        "0-separating-degree-symbolic",
+        "0-separating-degree-n",
         "0-reproducing",
         "1-reproducing",
         "monotone"
@@ -4399,7 +4399,7 @@
     },
     {
       "id": "Sn10",
-      "group": "1-separating 4",
+      "group": "1-separating, 0- and 1-reproducing, monotone",
       "sourcePosition": {
         "x": 3.9,
         "y": 12.45
@@ -4448,7 +4448,7 @@
         ]
       },
       "properties": [
-        "1-separating-degree-symbolic",
+        "1-separating-degree-n",
         "0-reproducing",
         "1-reproducing",
         "monotone"
@@ -4472,7 +4472,7 @@
     },
     {
       "id": "Sn11",
-      "group": "1-separating 3",
+      "group": "1-separating, monotone",
       "sourcePosition": {
         "x": 4.8,
         "y": 13.75
@@ -4531,7 +4531,7 @@
         ]
       },
       "properties": [
-        "1-separating-degree-symbolic",
+        "1-separating-degree-n",
         "monotone"
       ],
       "separating": {
@@ -4553,7 +4553,7 @@
     },
     {
       "id": "Sn12",
-      "group": "1-separating 2",
+      "group": "1-separating, 0- and 1-reproducing",
       "sourcePosition": {
         "x": 5.8,
         "y": 13.75
@@ -4612,7 +4612,7 @@
         ]
       },
       "properties": [
-        "1-separating-degree-symbolic",
+        "1-separating-degree-n",
         "0-reproducing",
         "1-reproducing"
       ],
@@ -4635,7 +4635,7 @@
     },
     {
       "id": "Sn1",
-      "group": "1-separating 1",
+      "group": "1-separating",
       "sourcePosition": {
         "x": 6.7,
         "y": 15.05
@@ -4694,7 +4694,7 @@
         ]
       },
       "properties": [
-        "1-separating-degree-symbolic"
+        "1-separating-degree-n"
       ],
       "separating": {
         "value": 1,
