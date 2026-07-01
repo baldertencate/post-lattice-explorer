@@ -301,7 +301,7 @@ function App() {
 
         <aside className="inspector" aria-label="Selection details">
           <div className="legend" aria-label="Node legend">
-            <LegendItem swatch="generator" label="Selected generator" />
+            <LegendItem swatch="generator" label="Selected clones" />
             <LegendItem
               swatch="generated"
               label={
@@ -314,26 +314,22 @@ function App() {
               swatch="complement"
               label={
                 selectionMode === 'upward'
-                  ? 'Downward complement'
-                  : 'Upward complement'
+                  ? 'Downward closed complement'
+                  : 'Upward closed complement'
               }
             />
             <LegendItem
               swatch="complementGenerator"
               label={
                 selectionMode === 'upward'
-                  ? 'Maximal complement generator'
-                  : 'Minimal complement generator'
+                  ? 'Maximal elements of the downward closed complement'
+                  : 'Minimal elements of the upward closed complement'
               }
             />
           </div>
 
           <div className="selection-list">
-            <h2>
-              {selectionMode === 'upward'
-                ? 'Upward generators'
-                : 'Downward generators'}
-            </h2>
+            <h2>Selected clones</h2>
             {selectedNodes.length > 0 ? (
               <ul>
                 {selectedNodes.map((node) => (
