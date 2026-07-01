@@ -327,10 +327,6 @@ function App() {
     setHoveredId(node.id)
   }
 
-  const onNodeMouseLeave: NodeMouseHandler = () => {
-    setHoveredId(null)
-  }
-
   const clearSelection = () => setSelectedIds(new Set())
 
   const resetView = () => {
@@ -420,7 +416,6 @@ function App() {
             onMoveEnd={(_event, nextViewport) => setViewport(nextViewport)}
             onNodeClick={onNodeClick}
             onNodeMouseEnter={onNodeMouseEnter}
-            onNodeMouseLeave={onNodeMouseLeave}
             proOptions={{ hideAttribution: true }}
           >
             <Background variant={BackgroundVariant.Dots} gap={24} size={1.2} />
