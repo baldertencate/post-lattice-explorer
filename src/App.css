@@ -155,8 +155,8 @@
   display: inline-flex;
   align-items: baseline;
   justify-content: center;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
@@ -410,13 +410,6 @@
 
 .react-flow__controls {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
-}
-
-.react-flow__minimap {
-  border: 1px solid #d9dee7;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #ffffff;
 }
 
 @media (max-width: 900px) {

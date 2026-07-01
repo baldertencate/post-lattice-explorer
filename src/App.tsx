@@ -4,7 +4,6 @@ import {
   BaseEdge,
   Controls,
   Handle,
-  MiniMap,
   Position,
   ReactFlow,
   type Edge,
@@ -67,8 +66,12 @@ const latticeData = rawLatticeData as LatticeJsonData
 
 const nodeDiameter = 48
 const nodeRadius = nodeDiameter / 2
+const horizontalLayoutScale = 1.2
 const verticalLayoutScale = 1.5
 const displayedGapNodeOffset = 23
+const layoutLeft = Math.min(...latticeData.nodes.map((node) => node.position.x))
+const layoutRight = Math.max(...latticeData.nodes.map((node) => node.position.x))
+const layoutCenterX = (layoutLeft + layoutRight) / 2
 const layoutTop = Math.min(...latticeData.nodes.map((node) => node.position.y))
 const graphEdges = latticeData.edges satisfies readonly DirectedEdge[]
 const graphNodeIds = latticeData.nodes.map((node) => node.id)
@@ -293,12 +296,6 @@ function App() {
           >
             <Background variant={BackgroundVariant.Dots} gap={24} size={1.2} />
             <Controls showInteractive={false} />
-            <MiniMap
-              pannable
-              zoomable
-              nodeColor={(node) => nodeColor(node.data?.status)}
-              maskColor="rgba(248, 250, 252, 0.72)"
-            />
           </ReactFlow>
         </div>
 
@@ -487,10 +484,6 @@ function renderMathText(text: string) {
       continue
     }
 
-    if (char === '{' || char === '}') {
-      continue
-    }
-
     parts.push(char)
   }
 
@@ -579,7 +572,7 @@ function isPresent<T>(value: T | undefined): value is T {
 
 function stretchedPosition(position: Point): Point {
   return {
-    x: position.x,
+    x: layoutCenterX + (position.x - layoutCenterX) * horizontalLayoutScale,
     y: layoutTop + (position.y - layoutTop) * verticalLayoutScale,
   }
 }
@@ -669,7 +662,10 @@ function getCircleEdgePath({
     tikzRouting?.out !== undefined &&
     tikzRouting.in !== undefined
   ) {
-    return tikzRoutedPath(source, target, tikzRouting)
+    const curvedSource = pointOnCircleAtTikzAngle(sourceCenter, tikzRouting.out)
+    const curvedTarget = pointOnCircleAtTikzAngle(targetCenter, tikzRouting.in + 180)
+
+    return tikzRoutedPath(curvedSource, curvedTarget, tikzRouting)
   }
 
   return `M ${source.x} ${source.y} L ${target.x} ${target.y}`
@@ -691,6 +687,10 @@ function offsetByTikzAngle(point: Point, degrees: number, distance: number) {
     x: point.x + Math.cos(radians) * distance,
     y: point.y - Math.sin(radians) * distance,
   }
+}
+
+function pointOnCircleAtTikzAngle(center: Point, degrees: number) {
+  return offsetByTikzAngle(center, degrees, nodeRadius)
 }
 
 function shouldCurveVerticalEdge(sourceId: string, targetId: string) {
@@ -801,21 +801,6 @@ function LegendItem({
       <span>{label}</span>
     </div>
   )
-}
-
-function nodeColor(status: unknown) {
-  switch (status) {
-    case 'generator':
-      return '#0f766e'
-    case 'generated':
-      return '#2f80ed'
-    case 'complement':
-      return '#fde68a'
-    case 'complementGenerator':
-      return '#d97706'
-    default:
-      return '#ffffff'
-  }
 }
 
 export default App
